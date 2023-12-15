@@ -6,7 +6,7 @@ import { Image } from 'expo-image';
 import { EstilosDialogos } from './Estilos.jsx';
 import Carga from './Carga.jsx';
 import { Dialogos, NuevosDialogos0, NuevosDialogos1, NuevosDialogos2} from '../components/ListaDialogos.js';
-import { Kurono, Kato, Kishimoto, Nishi, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2} from '../components/ClasesDialogos';
+import { Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2} from '../components/ClasesDialogos';
 
 const Main = ()=>{
     /* identifica cuando la app esta lista para iniciar */
@@ -122,7 +122,7 @@ const Main = ()=>{
         /* Nishi */
     const [NishiSerioOpacidad, setNishiSerioOpacidad] = useState(0);
         /* Perro */
-    const [Perro, setPerroOpacidad] = useState(0);
+    const [PerroOpacidad, setPerroOpacidad] = useState(0);
     /* Decisiones */
     const [Decision1, MostrarDecision1] = useState(0);
     const [Decision2, MostrarDecision2] = useState(0);
@@ -371,8 +371,8 @@ const Main = ()=>{
                         setKatoNerviosoOpacidad(1);
                     }
                     */
-                if(IndiceActual==82||IndiceActual==84||IndiceActual==91||IndiceActual==96||IndiceActual==99||
-                    IndiceActual==107){
+                if(IndiceActual==82||IndiceActual==84||IndiceActual==90||IndiceActual==91||IndiceActual==96||IndiceActual==99||
+                    IndiceActual==109||IndiceActual==113||IndiceActual==117){
                     console.log('Serio');
                     if(KatoSerioOpacidad==0){
                         BorrarExpresion();
@@ -383,14 +383,14 @@ const Main = ()=>{
                     if(KatoFelizOpacidad==0){
                         BorrarExpresion();
                         setKatoFelizOpacidad(1);
-                    }      
-                if(IndiceActual==82){
+                    }*/      
+                else if(IndiceActual==120||IndiceActual==122||IndiceActual==124){
                     console.log('Sorprendido');
                     if(KatoSorprendidoOpacidad==0){
                         BorrarExpresion();
                         setKatoSorprendidoOpacidad(1);
                     }
-                }*/
+                }
                 if(IndiceActual<84){
                     if(KatoUniformeOpacidad==0){
                         BorrarRopa();
@@ -462,7 +462,7 @@ const Main = ()=>{
                     }
                 }
                 if(IndiceActual==86||IndiceActual==88||IndiceActual==101||IndiceActual==104||IndiceActual==106||
-                    IndiceActual==109||IndiceActual==110){
+                    IndiceActual==108||IndiceActual==111||IndiceActual==115||IndiceActual==118||IndiceActual==131){
                     console.log('Seria');
                     if(KishimotoSeriaOpacidad==0){
                         BorrarExpresion();
@@ -486,6 +486,12 @@ const Main = ()=>{
             if(NishiSerioOpacidad==0){
                 BorrarExpresion();
                 setNishiSerioOpacidad(1);
+            }
+        }else if(Perro.ComprobarIndice){
+            if(PerroOpacidad == 0){
+                BorrarRopa();
+                BorrarExpresion();
+                setPerroOpacidad(1);
             }
         }
         /*}else if(Hojo.ComprobarIndice(IndiceActual)){

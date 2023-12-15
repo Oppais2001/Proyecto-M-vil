@@ -222,4 +222,4 @@ const decision2 = new Decision(208,["SI","NO"])
 //Lista de Personajes
 const ListaPersonajes = [Kurono,Kato,Nishi,Kishimoto,SegundaKishimoto,MrCebollin,Cebollin,Perro,Hojo,
     Tanaka,Sadayo]
-export{Kurono, Kato, Kishimoto, Nishi, Hojo, Sadayo, Cebollin, MrCebollin, decision1, decision2}
+export{Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadayo, Cebollin, MrCebollin, decision1, decision2}
