@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as Font from 'expo-font';
 import Inicio from './src/screen/Inicio.jsx';
 import Dialogos from './src/screen/Dialogos.jsx';
+import Combate from './src/screen/Combate.jsx';
+import Muerte from './src/screen/Muerte.jsx'
 
 const Stack = createNativeStackNavigator();
 export default function App(){
@@ -12,8 +14,12 @@ export default function App(){
   const [fonstLoaded, setFontsLoaded] = useState(false) ;
   const loadFonts = async () => {
     await Font.loadAsync({
-      'Gantz': require('./assets/Fonts/gantz.ttf'),
-      'Genjiro': require('./assets/Fonts/Genjiro.ttf'),
+      'Gantz': require('./assets/fonts/gantz.ttf'),
+      'Genjiro': require('./assets/fonts/Genjiro.ttf'),
+      'Digital-7': require('./assets/fonts/digital-7.ttf'),
+      'fuentex': require('./assets/fonts/upheavtt.ttf'),
+      'Open24DisplaySt': require('./assets/fonts/Open24DisplaySt.ttf'),
+      
     });
     setFontsLoaded(true);
   }
@@ -37,6 +43,8 @@ export default function App(){
       >
         <Stack.Screen name="Inicio" component={Inicio}/>
         <Stack.Screen name="Dialogos" component={Dialogos}/>
+        <Stack.Screen name="Combate" component={Combate}/>
+        <Stack.Screen name="Muerte" component={Muerte}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -88,7 +88,8 @@ const EstilosCarga = StyleSheet.create({
 const EstilosDialogos = StyleSheet.create({
     ContainerDialogos: {
         backgroundColor: "black",
-        height:'100%'
+        height:100*vh,
+        width: 107*vw
     },
     Texto: {
         color:'white',
@@ -107,6 +108,9 @@ const EstilosDialogos = StyleSheet.create({
         position:"absolute",
         top:0*vh,
         alignSelf:'center'
+    },
+    Perro: {
+        height: 50*vh
     },
     botonInicio: {
         height: '10%',
@@ -131,9 +135,10 @@ const EstilosDialogos = StyleSheet.create({
         left:0
     },
     Fondo: {
-        height:windowHeight,
-        width:windowWidth + 18*vh,
-        position:"absolute",
+        height: 100*vh,
+        width: 107*vw,
+        alignSelf: 'center',
+        position:"relative",
         top: 0,
         left:-10},
     Recuadro: {
@@ -206,5 +211,178 @@ const EstilosDialogos = StyleSheet.create({
         opacity: 0
     }
 });
+const EstilosCombate = StyleSheet.create({
+    contenedor: {
+        width: 107*vw,
+        height: 100*vh
+    },
+    Fondo: {
+        position: 'absolute',
+        top: -60*vh,
+        left: 0*vh,
+        height: 160*vh,
+        width: 140*vw
+    },
+    Recuadros: {
+        borderWidth: 1*vh,
+        borderColor: 'white',
+        borderRadius: 2.5*vh,
+        backgroundColor: 'transparent',
+        justifyContent: 'center',
+        alignItems: 'center',
+        opacity: 0
+    },
+    RecuadroNombre:{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        backgroundColor: 'black',
+        opacity: 0
+    },
+    RecuadroEstadisticas: {
+        width: 22*vh,
+        height: 40*vh,
+        position: 'absolute',
+        top: 6*vh,
+        left: 6*vh,
+        borderRadius: 1*vh,
+        opacity: 0
+    },
+    FondoRecuadroEstadisticas: {
+        width: 22*vh,
+        height: 40*vh,
+        position: 'absolute',
+        top: 6*vh,
+        left: 6*vh,
+        backgroundColor: 'black',
+        borderRadius: 1*vh,
+        opacity: 0.5,
+        opacity: 0
+    },
+    RecuadroNarracion: {
+        width: 100*vh,
+        height: 25*vh,
+        position: 'absolute',
+        top: 70*vh,
+        left: 100*vh,
+        opacity: 0
+    },
+    FondoRecuadroNarracion: {
+        width: 100*vh,
+        height: 25*vh,
+        position: 'absolute',
+        top: 70*vh,
+        left: 100*vh,
+        backgroundColor: 'black',
+        borderRadius: 1*vh,
+        opacity: 0
+    },
+    RecuadroAcciones: {
+        width: 72*vh,
+        height: 22*vh,
+        position: 'absolute',
+        top: 10*vh,
+        left: 50*vh,
+        opacity: 0
+    },
+    RecuadroEnemy: {
+        width: 25*vw,
+        height: 25*vw,
+        backgroundColor:'black',
+        position: 'absolute',
+        top: 10*vh,
+        left: 60*vw,
+        borderRadius: 50*vh,
+        opacity: 0
+    },
+    Player: {
+        height: 70*vh,
+        width: 50*vw,
+        position: 'absolute',
+        top: 35*vh,
+        left: 20*vh,
+        opacity: 0
+    },
+    Enemy: {
+        height:75*vh,
+        width: 17.5*vw,
+        position:'absolute',
+        top: 10*vh,
+        left: 65*vw,
+        backgroundColor:'transparent',
+        opacity: 0
+    },
+    Titulos: {
+        height: 8*vh,
+        textAlign: 'center',
+        color: 'white',
+        fontFamily: 'fuentex',
+        fontSize: 9*vh,
+        borderRadius: 1*vh,
+        opacity: 0
+    },
+    Textos: {
+        color: 'white',
+        fontSize: 8*vh,
+        fontFamily: 'Digital-7',
+        opacity: 0
+    },
+    Narracion: {
+        position: 'absolute',
+        top: 0,
+        left: 1*vh,
+        color: 'white',
+        fontSize: 6*vh,
+        fontFamily: 'Open24DisplaySt',
+        opacity: 0
+    },
+    Acciones: {
+        width: 35*vh,
+        height: 10*vh,
+        textAlign: 'center',
+        textAlignVertical:'center',
+        backgroundColor: 'black',
+        opacity: 0
+    },
+    Golpear: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        opacity: 0
+    },
+    Disparar: {
+        position: 'absolute',
+        top: 10*vh,
+        left: 0,
+        opacity: 0
+    },
+    Radar: {
+        position: 'absolute',
+        top: 0,
+        left: 35*vh,
+        opacity: 0
+    },
+    Salir: {
+        position: 'absolute',
+        top: 10*vh,
+        left: 35*vh,
+        opacity: 0
+    }
+})
+const EstiloMuerte = StyleSheet.create({
+    Contenedor: {
+        backgroundColor: 'black',
+        justifyContent: 'center',
+        alignContent: 'center'
+    },
+    Texto: {
+        fontFamily: 'Gantz',
+        color: 'red',
+    },
+    BotonInicio: {
+        color: 'red',
+        backgroundColor: 'white'
+    }
+})
 
-export {EstilosInicio, EstilosCarga, EstilosDialogos};
+export {EstilosInicio, EstilosCarga, EstilosDialogos,EstilosCombate,EstiloMuerte};

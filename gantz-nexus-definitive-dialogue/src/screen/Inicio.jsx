@@ -4,14 +4,15 @@ import { Text, View, Image, TouchableWithoutFeedback} from "react-native";
 import { Asset } from 'expo-asset';
 import { StatusBar } from 'expo-status-bar';
 import { EstilosInicio } from './Estilos';
+
 const Inicio = ({navigation})=>{
     const [ready, setReady] = useState(false);
     const [EsferaCerrada, setEsferaCerrada] = useState(null);
     const [EsferaAbierta, setEsferaAbierta] = useState(null);
     useEffect(()=>{
         const CargadoImagenes = (async () => {
-            const EsferaCerradaImage = Asset.fromModule(require('../../assets/img/Backgrounds/Esfera-Cerrada.png'))
-            const EsferaAbiertaImage = Asset.fromModule(require('../../assets/img/Backgrounds/Esfera-Abierta.png'))
+            const EsferaCerradaImage = Asset.fromModule(require('../../assets/img/backgrounds/Esfera-Cerrada.png'))
+            const EsferaAbiertaImage = Asset.fromModule(require('../../assets/img/backgrounds/Esfera-Abierta.png'))
             try {
                 ListaImages = [EsferaCerradaImage.downloadAsync(),EsferaAbiertaImage.downloadAsync()]
                 await Promise.all[ListaImages];

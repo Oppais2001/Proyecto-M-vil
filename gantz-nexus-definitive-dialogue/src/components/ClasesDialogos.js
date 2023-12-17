@@ -1,4 +1,11 @@
 import { Dialogos, NuevosDialogos0, NuevosDialogos1, NuevosDialogos2 } from './ListaDialogos'
+/* Reseteo de Dialogos */
+var DialogosIniciales = [...Dialogos];
+var DialogosPrincipales = Dialogos;
+var DialogosDecisionFalsa = NuevosDialogos0;
+var DialogosDecisionVerdadera = NuevosDialogos1;
+var DialogosDecisionVerdadera1 = NuevosDialogos2;
+console.log(DialogosPrincipales.length)
 class Personaje{
     constructor(Nombre, Indices, Expresion, Ropa){
         this.Nombre = Nombre;
@@ -83,6 +90,11 @@ class Decision{
         return opcion;
     }OcultarOpciones(){
         console.log("Ocultar Opciones")
+    }ResetearDecision(){
+        console.log(DialogosPrincipales.length, DialogosIniciales.length)
+        DialogosPrincipales = [...DialogosIniciales];
+        console.log(DialogosPrincipales.length, DialogosIniciales.length)
+        this.opcion = false;
     }ElegirDecision(Decision){
         this.opcion = Decision;
         this.MoverDialogos(ListaPersonajes, decision2);
@@ -115,12 +127,12 @@ class Decision{
         const Indice2 = 90;
         if(this.opcion==true){
             console.log("Se agregaron los dialogos de la opcion 1")
-            Dialogos.splice(Indice1, 0, ...NuevosDialogos1)//arreglo.splice(Inicio,cantidadElementosEliminar,item1,item2)
-            Dialogos.splice(Indice2, 0, ...NuevosDialogos2)
+            DialogosPrincipales.splice(Indice1, 0, ...DialogosDecisionVerdadera)//arreglo.splice(Inicio,cantidadElementosEliminar,item1,item2)
+            DialogosPrincipales.splice(Indice2, 0, ...DialogosDecisionVerdadera1)
         }
         if(this.opcion==false){
             console.log("Se agregaron los dialogos de la opcion 1")
-            Dialogos.splice(Indice1, 0, ...NuevosDialogos0)
+            DialogosPrincipales.splice(Indice1, 0, ...DialogosDecisionFalsa)
         }
     }
     AgregarIndices(personaje1, personaje2, personaje3, personaje4){//(Kurono, kato, kishimoto, nishi)
@@ -222,4 +234,4 @@ const decision2 = new Decision(208,["SI","NO"])
 //Lista de Personajes
 const ListaPersonajes = [Kurono,Kato,Nishi,Kishimoto,SegundaKishimoto,MrCebollin,Cebollin,Perro,Hojo,
     Tanaka,Sadayo]
-export{Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadayo, Cebollin, MrCebollin, decision1, decision2}
+export{Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadayo, Cebollin, MrCebollin, decision1, decision2, DialogosPrincipales}

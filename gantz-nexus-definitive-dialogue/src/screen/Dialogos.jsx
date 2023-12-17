@@ -5,10 +5,9 @@ import { Asset } from 'expo-asset';
 import { Image } from 'expo-image';
 import { EstilosDialogos } from './Estilos.jsx';
 import Carga from './Carga.jsx';
-import { Dialogos, NuevosDialogos0, NuevosDialogos1, NuevosDialogos2} from '../components/ListaDialogos.js';
-import { Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2} from '../components/ClasesDialogos';
+import { Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2 , DialogosPrincipales} from '../components/ClasesDialogos';
 
-const Main = ()=>{
+const Main = ({navigation})=>{
     /* identifica cuando la app esta lista para iniciar */
     const [ready, setReady] = useState(false);
     /* Indice de Dialogo */
@@ -22,8 +21,6 @@ const Main = ()=>{
     /* Opacidad del panel de decisiones */
     const [Decision1AOpacidad, setDecision1AOpacidad] = useState(0);
     const [Decision1BOpacidad, setDecision1BOpacidad] = useState(0);
-    /* Decision Elegida */
-    const [DecisionElegida, setDecisionElegida] = useState(null);
     /* Opacidad Iconos */
     const [IconoDialogoOpacidad, setIconoDialogoOpacidad] = useState(0);
     const [IconoOpcionAOpacidad, setIconoOpacionAOpacidad] = useState(0);
@@ -31,6 +28,10 @@ const Main = ()=>{
     /* Cargado de Imagenes */
     /* Fondo */
     const [Fondo, setFondo] = useState(null);
+    const [Esfera, setEsfera] = useState(null);
+    /* Efectos */
+    const [Censura, setCensura] = useState(null);
+    const [CensuraOpacidad, setCensuraOpacidad] = useState(0);
     /* Ropas */
         /* Kurono */
     const [KuronoUniforme, setKuronoUniforme] = useState(null);
@@ -75,7 +76,7 @@ const Main = ()=>{
         /* Nishi */
     const [NishiSerio, setNishiSerio] = useState(null);
         /* Perro */
-    const [PerroImage, setPerroImage] = useState(null);
+    const [Perro, setPerro] = useState(null);
     /* Opacidades de Imagenes */
     /* Fondo */
     const [FondoOpacidad, setFondoOpacidad] = useState(0);
@@ -161,6 +162,8 @@ const Main = ()=>{
         setNishiTrajeOpacidad(0);
         /*Perro*/
         setPerroOpacidad(0);
+        /* Efectos */
+        setCensuraOpacidad(0);
     }/* Limpia del lienzo cualquier expresion */
     const BorrarExpresion = () =>{
         console.log('Borrado Expresion')
@@ -188,6 +191,7 @@ const Main = ()=>{
         setNishiSerioOpacidad(0);
     }/* Funcion encargada de tomar el indice y cambiar el personaje o mantenerlo en pantalla */
     const MostrarPersonajes = (IndiceActual) => {
+        console.log(Cebollin.Indices)
         if(Kurono.ComprobarIndice(IndiceActual)){
             console.log('Kurono');
             CambiarNombre('Kurono');
@@ -371,8 +375,14 @@ const Main = ()=>{
                         setKatoNerviosoOpacidad(1);
                     }
                     */
-                if(IndiceActual==82||IndiceActual==84||IndiceActual==90||IndiceActual==91||IndiceActual==96||IndiceActual==99||
-                    IndiceActual==109||IndiceActual==113||IndiceActual==117){
+                if(IndiceActual>=118&&IndiceActual<=124){
+                    console.log('Sorprendido');
+                    if(KatoSorprendidoOpacidad==0){
+                            BorrarExpresion();
+                            setKatoSorprendidoOpacidad(1);
+                    }
+                }
+                else{
                     console.log('Serio');
                     if(KatoSerioOpacidad==0){
                         BorrarExpresion();
@@ -384,20 +394,16 @@ const Main = ()=>{
                         BorrarExpresion();
                         setKatoFelizOpacidad(1);
                     }*/      
-                else if(IndiceActual==120||IndiceActual==122||IndiceActual==124){
-                    console.log('Sorprendido');
-                    if(KatoSorprendidoOpacidad==0){
-                        BorrarExpresion();
-                        setKatoSorprendidoOpacidad(1);
-                    }
-                }
+ 
                 if(IndiceActual<84){
                     if(KatoUniformeOpacidad==0){
                         BorrarRopa();
                         setKatoUniformeOpacidad(1);
                     }
                 }else if(IndiceActual>=91){
-                    console.log('Aqui deberia activar una animacion de Kato cambiandose')
+                    if(IndiceActual==91){
+                        console.log('Aqui deberia activar una animacion de Kato cambiandose')
+                    }
                     console.log('Traje')
                     if(KatoTrajeOpacidad==0){
                         BorrarRopa();
@@ -416,6 +422,7 @@ const Main = ()=>{
                 if(KishimotoDesnudaOpacidad==0){
                     BorrarRopa();
                     setKishimotoDesnudaOpacidad(1);
+                    setCensuraOpacidad(1);
                 }
             }else if(IndiceActual==59){
                 console.log('Uniforme')
@@ -461,19 +468,19 @@ const Main = ()=>{
                         setKishimotoTrajeOpacidad(1);
                     }
                 }
-                if(IndiceActual==86||IndiceActual==88||IndiceActual==101||IndiceActual==104||IndiceActual==106||
-                    IndiceActual==108||IndiceActual==111||IndiceActual==115||IndiceActual==118||IndiceActual==131){
-                    console.log('Seria');
-                    if(KishimotoSeriaOpacidad==0){
-                        BorrarExpresion();
-                        setKishimotoSeriaOpacidad(1);
-                    }
-                }else if(IndiceActual==94||IndiceActual==97){
+                if(IndiceActual==94||IndiceActual==97){
                     console.log('Nerviosa')
                     if(KishimotoNerviosaOpacidad==0){
                         BorrarExpresion();
                         setKishimotoNerviosaOpacidad(1);
                     }
+                }else{
+                    console.log('Seria');
+                    if(KishimotoSeriaOpacidad==0){
+                        BorrarExpresion();
+                        setKishimotoSeriaOpacidad(1);
+                    }
+
                 }
             }
         }else if(Nishi.ComprobarIndice(IndiceActual)){
@@ -487,7 +494,7 @@ const Main = ()=>{
                 BorrarExpresion();
                 setNishiSerioOpacidad(1);
             }
-        }else if(Perro.ComprobarIndice){
+        }else if(Perro.ComprobarIndice(IndiceActual)){
             if(PerroOpacidad == 0){
                 BorrarRopa();
                 BorrarExpresion();
@@ -496,17 +503,19 @@ const Main = ()=>{
         }
         /*}else if(Hojo.ComprobarIndice(IndiceActual)){
             var rutaPersonaje = Hojo.MostrarPersonaje();
-            var rutaExpresion = Hojo.MostrarExpresion();
-        }else if(Cebollin.ComprobarIndice(IndiceActual)){
-            var rutaPersonaje = Cebollin.MostrarPersonaje();
-            var rutaExpresion = '';
-        }else{
+            var rutaExpresion = Hojo.MostrarExpresion();*/
+        else if(Cebollin.ComprobarIndice(IndiceActual)){
+            console.log('Cebollin')
+            CambiarNombre('Cebollin');
+            BorrarRopa();
+            BorrarExpresion();
+        }/*else{
             console.log('Falta el personaje')
         */
     }
     const Avanzar = () => {
-        console.log('Avanzar', Dialogos.length)
-        if(Indice<Dialogos.length&&Indice!=79){
+        console.log('Avanzar', DialogosPrincipales.length)
+        if(Indice<DialogosPrincipales.length&&Indice!=79){
             CambiarIndice(Indice+1)
             console.log('Indice del Dialogo: ' + String(Indice+1))
             console.log('Indice del Personaje: ' + String(Indice+2))
@@ -524,7 +533,6 @@ const Main = ()=>{
                 setDecision1AOpacidad(0);
                 setDecision1BOpacidad(0);
                 decision1.ElegirDecision(false);
-                setDecisionElegida(false);
                 CambiarIndice(Indice+1)
                 console.log('Indice del Dialogo: ' + String(Indice+1))
                 console.log('Indice del Personaje: ' + String(Indice+2))
@@ -549,7 +557,6 @@ const Main = ()=>{
                 setDecision1AOpacidad(0);
                 setDecision1BOpacidad(0);
                 decision1.ElegirDecision(true);
-                setDecisionElegida(true);
                 CambiarIndice(Indice+1)
                 console.log('Indice del Dialogo: ' + String(Indice+1))
                 console.log('Indice del Personaje: ' + String(Indice+2))
@@ -559,41 +566,46 @@ const Main = ()=>{
     }
     useEffect(() => {
         (async () => {
+            console.log('***reseteado***')
+            decision1.ResetearDecision();
             /* Fondo */
-            const FondoImage = Asset.fromModule(require('../../assets/img/Backgrounds/Room.jpeg'))
+            const FondoImage = Asset.fromModule(require('../../assets/img/backgrounds/HabitacionNoche.png'))
             /* Kurono */
-            const KuronoUniformeImage = Asset.fromModule(require('../../assets/img/Characters/KuronoUniforme.png'))
-            const KuronoCamisaImage = Asset.fromModule(require('../../assets/img/Characters/KuronoCamisa.png'))
-            const KuronoTrajeImage = Asset.fromModule(require('../../assets/img/Characters/KuronoTraje.png'))
-            const KuronoSerioImage = Asset.fromModule(require('../../assets/img/Characters/KuronoSerio.png'))
-            const KuronoNerviosoImage = Asset.fromModule(require('../../assets/img/Characters/KuronoNervioso.png'))
-            const KuronoFelizImage = Asset.fromModule(require('../../assets/img/Characters/KuronoFeliz.png'))
-            const KuronoTristeImage = Asset.fromModule(require('../../assets/img/Characters/KuronoTriste.png'))
-            const KuronoSorprendidoImage = Asset.fromModule(require('../../assets/img/Characters/KuronoSorprendido.png'))
+            const KuronoUniformeImage = Asset.fromModule(require('../../assets/img/characters/KuronoUniforme.png'))
+            const KuronoCamisaImage = Asset.fromModule(require('../../assets/img/characters/KuronoCamisa.png'))
+            const KuronoTrajeImage = Asset.fromModule(require('../../assets/img/characters/KuronoTraje.png'))
+            const KuronoSerioImage = Asset.fromModule(require('../../assets/img/characters/KuronoSerio.png'))
+            const KuronoNerviosoImage = Asset.fromModule(require('../../assets/img/characters/KuronoNervioso.png'))
+            const KuronoFelizImage = Asset.fromModule(require('../../assets/img/characters/KuronoFeliz.png'))
+            const KuronoTristeImage = Asset.fromModule(require('../../assets/img/characters/KuronoTriste.png'))
+            const KuronoSorprendidoImage = Asset.fromModule(require('../../assets/img/characters/KuronoSorprendido.png'))
             /* Kato */
-            const KatoUniformeImage = Asset.fromModule(require('../../assets/img/Characters/KatoUniforme.png'))
-            const KatoTrajeImage = Asset.fromModule(require('../../assets/img/Characters/KatoTraje.png'))
-            const KatoSerioImage = Asset.fromModule(require('../../assets/img/Characters/KatoSerio.png'))
-            const KatoNerviosoImage = Asset.fromModule(require('../../assets/img/Characters/KatoNervioso.png'))
-            const KatoFelizImage = Asset.fromModule(require('../../assets/img/Characters/KatoFeliz.png'))
-            const KatoSorprendidoImage = Asset.fromModule(require('../../assets/img/Characters/KatoSorprendido.png'))
+            const KatoUniformeImage = Asset.fromModule(require('../../assets/img/characters/KatoUniforme.png'))
+            const KatoTrajeImage = Asset.fromModule(require('../../assets/img/characters/KatoTraje.png'))
+            const KatoSerioImage = Asset.fromModule(require('../../assets/img/characters/KatoSerio.png'))
+            const KatoNerviosoImage = Asset.fromModule(require('../../assets/img/characters/KatoNervioso.png'))
+            const KatoFelizImage = Asset.fromModule(require('../../assets/img/characters/KatoFeliz.png'))
+            const KatoSorprendidoImage = Asset.fromModule(require('../../assets/img/characters/KatoSorprendido.png'))
             /* Kishimoto */
-            const KishimotoDesnudaImage = Asset.fromModule(require('../../assets/img/Characters/Kishimoto.png'))
-            const KishimotoUniformeImage = Asset.fromModule(require('../../assets/img/Characters/KishimotoUniforme.png'))
-            const KishimotoTrajeImage = Asset.fromModule(require('../../assets/img/Characters/KishimotoTraje.png'))
-            const KishimotoSeriaImage = Asset.fromModule(require('../../assets/img/Characters/KishimotoSeria.png'))
-            const KishimotoNerviosaImage = Asset.fromModule(require('../../assets/img/Characters/KishimotoNerviosa.png'))
-            const KishimotoFelizImage = Asset.fromModule(require('../../assets/img/Characters/KishimotoFeliz.png'))
-            const KishimotoParpadeo1Image = Asset.fromModule(require('../../assets/img/Characters/KishimotoParpadeo1.png'))
-            const KishimotoParpadeo2Image = Asset.fromModule(require('../../assets/img/Characters/KishimotoParpadeo2.png'))
-            const KishimotoParpadeo3Image = Asset.fromModule(require('../../assets/img/Characters/KishimotoParpadeo3.png'))
+            const KishimotoDesnudaImage = Asset.fromModule(require('../../assets/img/characters/Kishimoto.png'))
+            const KishimotoUniformeImage = Asset.fromModule(require('../../assets/img/characters/KishimotoUniforme.png'))
+            const KishimotoTrajeImage = Asset.fromModule(require('../../assets/img/characters/KishimotoTraje.png'))
+            const KishimotoSeriaImage = Asset.fromModule(require('../../assets/img/characters/KishimotoSeria.png'))
+            const KishimotoNerviosaImage = Asset.fromModule(require('../../assets/img/characters/KishimotoNerviosa.png'))
+            const KishimotoFelizImage = Asset.fromModule(require('../../assets/img/characters/KishimotoFeliz.png'))
+            const KishimotoParpadeo1Image = Asset.fromModule(require('../../assets/img/characters/KishimotoParpadeo1.png'))
+            const KishimotoParpadeo2Image = Asset.fromModule(require('../../assets/img/characters/KishimotoParpadeo2.png'))
+            const KishimotoParpadeo3Image = Asset.fromModule(require('../../assets/img/characters/KishimotoParpadeo3.png'))
             /* Nishi */
-            const NishiTrajeImage = Asset.fromModule(require('../../assets/img/Characters/NishiTraje.png'))
-            const NishiSerioImage = Asset.fromModule(require('../../assets/img/Characters/NishiSerio.png'))
+            const NishiTrajeImage = Asset.fromModule(require('../../assets/img/characters/NishiTraje.png'))
+            const NishiSerioImage = Asset.fromModule(require('../../assets/img/characters/NishiSerio.png'))
             /* Perro */
-            const PerroImage = Asset.fromModule(require('../../assets/img/Characters/Perro.png'))
+            const PerroImage = Asset.fromModule(require('../../assets/img/characters/Perro.png'))
+            /* Efectos */
+            const CensuraImage = Asset.fromModule(require('../../assets/img/effects/censura.png'))
             /* Lista de Imagenes de descarga asyncronica */
-            const ListaImages = [FondoImage.downloadAsync(),KuronoUniformeImage.downloadAsync(),
+            const ListaImages = [FondoImage.downloadAsync(),
+                CensuraImage.downloadAsync(),KuronoUniformeImage.downloadAsync(),
                 KuronoCamisaImage.downloadAsync(),KuronoTrajeImage.downloadAsync(),
                 KuronoSerioImage.downloadAsync(),KuronoNerviosoImage.downloadAsync(),
                 KuronoFelizImage.downloadAsync(),KuronoSorprendidoImage.downloadAsync(),
@@ -610,6 +622,7 @@ const Main = ()=>{
                 await Promise.all(ListaImages);
                 console.log('Ha cargado');
                 setFondo(FondoImage);
+                setCensura(CensuraImage);
                 /* Kurono */
                 setKuronoUniforme(KuronoUniformeImage);
                 setKuronoCamisa(KuronoCamisaImage);
@@ -637,7 +650,7 @@ const Main = ()=>{
                 setKishimotoParpadeo3(KishimotoParpadeo3Image);
                 setNishiTraje(NishiTrajeImage);
                 setNishiSerio(NishiSerioImage);
-                setPerroImage(PerroImage);
+                setPerro(PerroImage);
                 setReady(true);
             } catch (error) {
                 console.error('Error al descargar las imágenes', error);
@@ -817,6 +830,18 @@ const Main = ()=>{
                 style={{...EstilosDialogos.Personajes,opacity:NishiSerioOpacidad}}
                 cachePolicy={'memory'}
                 />
+                {/* Perro */}
+                <Image
+                source={{...Perro}}
+                style={{...EstilosDialogos.Personajes,opacity:PerroOpacidad}}
+                cachePolicy={'memory'}
+                />
+                {/* Efectos */}
+                <Image
+                source={{...Censura}}
+                style={{...EstilosDialogos.Personajes,opacity:CensuraOpacidad}}
+                cachePolicy={'memory'}
+                />
                 {/* Botones */}
                 <TouchableWithoutFeedback
                     onPress={Avanzar}
@@ -837,7 +862,7 @@ const Main = ()=>{
             <View style={{...EstilosDialogos.Recuadro, opacity: DialogosOpacidad * 0.5}}>
             </View>
             <View style={{...EstilosDialogos.RecuadroDialogo, opacity: DialogosOpacidad}}>
-                <Text style={EstilosDialogos.Dialogos}>{Dialogos[Indice]}</Text>
+                <Text style={EstilosDialogos.Dialogos}>{DialogosPrincipales[Indice]}</Text>
                 <AntDesign name='caretdown' size={24} color='white' style={{...EstilosDialogos.IconDialogos, opacity:IconoDialogoOpacidad}}/>
             </View>
             <View style={{...EstilosDialogos.RecuadroDialogo, opacity: DialogosOpacidad}}>
@@ -866,5 +891,4 @@ const Main = ()=>{
         </>
     );
 };
-
 export default Main
