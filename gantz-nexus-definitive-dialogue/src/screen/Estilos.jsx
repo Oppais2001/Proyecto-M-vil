@@ -218,10 +218,10 @@ const EstilosCombate = StyleSheet.create({
     },
     Fondo: {
         position: 'absolute',
-        top: -60*vh,
+        top: 0*vh,
         left: 0*vh,
-        height: 160*vh,
-        width: 140*vw
+        height: 100*vh,
+        width: 107*vw
     },
     Recuadros: {
         borderWidth: 1*vh,
@@ -230,14 +230,12 @@ const EstilosCombate = StyleSheet.create({
         backgroundColor: 'transparent',
         justifyContent: 'center',
         alignItems: 'center',
-        opacity: 0
     },
     RecuadroNombre:{
         position: 'absolute',
         top: 0,
         left: 0,
         backgroundColor: 'black',
-        opacity: 0
     },
     RecuadroEstadisticas: {
         width: 22*vh,
@@ -246,7 +244,6 @@ const EstilosCombate = StyleSheet.create({
         top: 6*vh,
         left: 6*vh,
         borderRadius: 1*vh,
-        opacity: 0
     },
     FondoRecuadroEstadisticas: {
         width: 22*vh,
@@ -257,7 +254,6 @@ const EstilosCombate = StyleSheet.create({
         backgroundColor: 'black',
         borderRadius: 1*vh,
         opacity: 0.5,
-        opacity: 0
     },
     RecuadroNarracion: {
         width: 100*vh,
@@ -265,7 +261,6 @@ const EstilosCombate = StyleSheet.create({
         position: 'absolute',
         top: 70*vh,
         left: 100*vh,
-        opacity: 0
     },
     FondoRecuadroNarracion: {
         width: 100*vh,
@@ -274,8 +269,8 @@ const EstilosCombate = StyleSheet.create({
         top: 70*vh,
         left: 100*vh,
         backgroundColor: 'black',
-        borderRadius: 1*vh,
-        opacity: 0
+        borderRadius: 2.5*vh,
+        opacity: 0.6
     },
     RecuadroAcciones: {
         width: 72*vh,
@@ -283,7 +278,6 @@ const EstilosCombate = StyleSheet.create({
         position: 'absolute',
         top: 10*vh,
         left: 50*vh,
-        opacity: 0
     },
     RecuadroEnemy: {
         width: 25*vw,
@@ -293,7 +287,6 @@ const EstilosCombate = StyleSheet.create({
         top: 10*vh,
         left: 60*vw,
         borderRadius: 50*vh,
-        opacity: 0
     },
     Player: {
         height: 70*vh,
@@ -301,7 +294,6 @@ const EstilosCombate = StyleSheet.create({
         position: 'absolute',
         top: 35*vh,
         left: 20*vh,
-        opacity: 0
     },
     Enemy: {
         height:75*vh,
@@ -310,7 +302,6 @@ const EstilosCombate = StyleSheet.create({
         top: 10*vh,
         left: 65*vw,
         backgroundColor:'transparent',
-        opacity: 0
     },
     Titulos: {
         height: 8*vh,
@@ -319,13 +310,37 @@ const EstilosCombate = StyleSheet.create({
         fontFamily: 'fuentex',
         fontSize: 9*vh,
         borderRadius: 1*vh,
-        opacity: 0
+    },
+    TextoNombre: {
+        position: 'absolute',
+        top: 2*vh,
+        left: 9*vh
+    },
+    RecuadroTextoNombre: {
+        width: 18*vh,
+        height: 7*vh,
+        position: 'absolute',
+        top: 3*vh,
+        left: 8*vh,
+        backgroundColor: 'black'
+    },
+    TextoAcciones: {
+        position: 'absolute',
+        top: 5*vh,
+        left: 64*vh
+    },
+    RecuadroTextoAcciones: {
+        height: 7*vh,
+        width: 44.5*vh,
+        position: 'absolute',
+        top: 6*vh,
+        left: 63*vh,
+        backgroundColor: 'black'
     },
     Textos: {
         color: 'white',
         fontSize: 8*vh,
         fontFamily: 'Digital-7',
-        opacity: 0
     },
     Narracion: {
         position: 'absolute',
@@ -334,7 +349,6 @@ const EstilosCombate = StyleSheet.create({
         color: 'white',
         fontSize: 6*vh,
         fontFamily: 'Open24DisplaySt',
-        opacity: 0
     },
     Acciones: {
         width: 35*vh,
@@ -342,31 +356,26 @@ const EstilosCombate = StyleSheet.create({
         textAlign: 'center',
         textAlignVertical:'center',
         backgroundColor: 'black',
-        opacity: 0
     },
     Golpear: {
         position: 'absolute',
         top: 0,
         left: 0,
-        opacity: 0
     },
     Disparar: {
         position: 'absolute',
         top: 10*vh,
         left: 0,
-        opacity: 0
     },
     Radar: {
         position: 'absolute',
         top: 0,
         left: 35*vh,
-        opacity: 0
     },
     Salir: {
         position: 'absolute',
         top: 10*vh,
         left: 35*vh,
-        opacity: 0
     }
 })
 const EstiloMuerte = StyleSheet.create({

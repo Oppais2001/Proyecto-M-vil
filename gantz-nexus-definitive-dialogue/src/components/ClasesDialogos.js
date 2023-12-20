@@ -1,7 +1,7 @@
 import { Dialogos, NuevosDialogos0, NuevosDialogos1, NuevosDialogos2 } from './ListaDialogos'
 /* Reseteo de Dialogos */
 var DialogosIniciales = [...Dialogos];
-var DialogosPrincipales = Dialogos;
+var DialogosPrincipales = [...Dialogos];
 var DialogosDecisionFalsa = NuevosDialogos0;
 var DialogosDecisionVerdadera = NuevosDialogos1;
 var DialogosDecisionVerdadera1 = NuevosDialogos2;

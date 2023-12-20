@@ -1,13 +1,16 @@
 import React, {useEffect, useState} from 'react';
-import { Text, View,TouchableWithoutFeedback, StatusBar} from 'react-native';
+import { Text, View,TouchableWithoutFeedback, Animated} from 'react-native';
 import { AntDesign } from '@expo/vector-icons'; 
 import { Asset } from 'expo-asset';
 import { Image } from 'expo-image';
+import { StatusBar } from 'expo-status-bar';
 import { EstilosDialogos } from './Estilos.jsx';
 import Carga from './Carga.jsx';
 import { Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2 , DialogosPrincipales} from '../components/ClasesDialogos';
 
 const Main = ({navigation})=>{
+    /* Animaciones */
+    //const [Aparecer, setAparecer] = useState(new Animated.Value(0))
     /* identifica cuando la app esta lista para iniciar */
     const [ready, setReady] = useState(false);
     /* Indice de Dialogo */
@@ -26,8 +29,9 @@ const Main = ({navigation})=>{
     const [IconoOpcionAOpacidad, setIconoOpacionAOpacidad] = useState(0);
     const [IconoOpcionBOpacidad, setIconoOpacionBOpacidad] = useState(0);
     /* Cargado de Imagenes */
-    /* Fondo */
-    const [Fondo, setFondo] = useState(null);
+    /* Fondos */
+    const [Habitacion, setHabitacion] = useState(null);
+    const [Calle1, setCalle1] = useState(null);
     const [Esfera, setEsfera] = useState(null);
     /* Efectos */
     const [Censura, setCensura] = useState(null);
@@ -76,10 +80,11 @@ const Main = ({navigation})=>{
         /* Nishi */
     const [NishiSerio, setNishiSerio] = useState(null);
         /* Perro */
-    const [Perro, setPerro] = useState(null);
+    const [PerroImage, setPerroImage] = useState(null);
     /* Opacidades de Imagenes */
     /* Fondo */
-    const [FondoOpacidad, setFondoOpacidad] = useState(0);
+    const [HabitacionOpacidad, setHabitacionOpacidad] = useState(0);
+    const [Calle1Opacidad, setCalle1Opacidad] = useState(0);
     /* Kurono */
     const [KuronoUniformeOpacidad, setKuronoUniformeOpacidad] = useState(0);
     const [KuronoUniformeEnojadoOpacidad, setKuronoUniformeEnojadoOpacidad] = useState(0);
@@ -134,7 +139,7 @@ const Main = ({navigation})=>{
         setStartOpacidad(0);
         setBotonInicioDisable(true);
         setDialogosOpacidad(1);
-        setFondoOpacidad(1);
+        setHabitacionOpacidad(1);
         MostrarPersonajes(1);
         setBotonDialogosDisable(false);
         setIconoDialogoOpacidad(1);
@@ -192,6 +197,18 @@ const Main = ({navigation})=>{
     }/* Funcion encargada de tomar el indice y cambiar el personaje o mantenerlo en pantalla */
     const MostrarPersonajes = (IndiceActual) => {
         console.log(Cebollin.Indices)
+        if(decision1.opcion){
+            if(IndiceActual==161||IndiceActual==177||IndiceActual==220||IndiceActual==537||IndiceActual==564||IndiceActual==582){
+                IniciaCombate = true;
+                navigation.navigate('Combate')
+            }
+        }else if(!decision1.opcion){
+            if(IndiceActual==141||IndiceActual==157||IndiceActual==200||IndiceActual==517||IndiceActual==544||IndiceActual==562){
+                setTimeout(()=>{
+                    navigation.navigate('Combate')
+                },2000);
+                }
+        }
         if(Kurono.ComprobarIndice(IndiceActual)){
             console.log('Kurono');
             CambiarNombre('Kurono');
@@ -495,6 +512,8 @@ const Main = ({navigation})=>{
                 setNishiSerioOpacidad(1);
             }
         }else if(Perro.ComprobarIndice(IndiceActual)){
+            console.log('Perro')
+            CambiarNombre('Perro')
             if(PerroOpacidad == 0){
                 BorrarRopa();
                 BorrarExpresion();
@@ -509,9 +528,10 @@ const Main = ({navigation})=>{
             CambiarNombre('Cebollin');
             BorrarRopa();
             BorrarExpresion();
-        }/*else{
+        }else{
             console.log('Falta el personaje')
-        */
+        }
+
     }
     const Avanzar = () => {
         console.log('Avanzar', DialogosPrincipales.length)
@@ -568,8 +588,9 @@ const Main = ({navigation})=>{
         (async () => {
             console.log('***reseteado***')
             decision1.ResetearDecision();
-            /* Fondo */
-            const FondoImage = Asset.fromModule(require('../../assets/img/backgrounds/HabitacionNoche.png'))
+            /* Fondos */
+            const HabitacionImage = Asset.fromModule(require('../../assets/img/backgrounds/HabitacionNoche.png'))
+            const Calle1Image = Asset.fromModule(require('../../assets/img/backgrounds/FondoCalle1.png'))
             /* Kurono */
             const KuronoUniformeImage = Asset.fromModule(require('../../assets/img/characters/KuronoUniforme.png'))
             const KuronoCamisaImage = Asset.fromModule(require('../../assets/img/characters/KuronoCamisa.png'))
@@ -600,11 +621,11 @@ const Main = ({navigation})=>{
             const NishiTrajeImage = Asset.fromModule(require('../../assets/img/characters/NishiTraje.png'))
             const NishiSerioImage = Asset.fromModule(require('../../assets/img/characters/NishiSerio.png'))
             /* Perro */
-            const PerroImage = Asset.fromModule(require('../../assets/img/characters/Perro.png'))
+            const PerroImageload = Asset.fromModule(require('../../assets/img/characters/Perro.png'))
             /* Efectos */
             const CensuraImage = Asset.fromModule(require('../../assets/img/effects/censura.png'))
             /* Lista de Imagenes de descarga asyncronica */
-            const ListaImages = [FondoImage.downloadAsync(),
+            const ListaImages = [HabitacionImage.downloadAsync(), Calle1Image.downloadAsync,
                 CensuraImage.downloadAsync(),KuronoUniformeImage.downloadAsync(),
                 KuronoCamisaImage.downloadAsync(),KuronoTrajeImage.downloadAsync(),
                 KuronoSerioImage.downloadAsync(),KuronoNerviosoImage.downloadAsync(),
@@ -617,11 +638,12 @@ const Main = ({navigation})=>{
                 KishimotoNerviosaImage.downloadAsync(),KishimotoFelizImage.downloadAsync(),
                 KishimotoParpadeo1Image.downloadAsync(),KishimotoParpadeo2Image.downloadAsync(),
                 KishimotoParpadeo3Image.downloadAsync(),NishiTrajeImage.downloadAsync(),
-                NishiSerioImage.downloadAsync(),PerroImage.downloadAsync()];
+                NishiSerioImage.downloadAsync(),PerroImageload.downloadAsync()];
             try {
                 await Promise.all(ListaImages);
                 console.log('Ha cargado');
-                setFondo(FondoImage);
+                setHabitacion(HabitacionImage);
+                setCalle1(Calle1Image);
                 setCensura(CensuraImage);
                 /* Kurono */
                 setKuronoUniforme(KuronoUniformeImage);
@@ -650,7 +672,7 @@ const Main = ({navigation})=>{
                 setKishimotoParpadeo3(KishimotoParpadeo3Image);
                 setNishiTraje(NishiTrajeImage);
                 setNishiSerio(NishiSerioImage);
-                setPerro(PerroImage);
+                setPerroImage(PerroImageload);
                 setReady(true);
             } catch (error) {
                 console.error('Error al descargar las imágenes', error);
@@ -667,8 +689,12 @@ const Main = ({navigation})=>{
             <StatusBar hidden={true} barStyle={'translucent'}/>
             <View style={EstilosDialogos.ContainerDialogos}>
                 <Image
-                source={{...Fondo}}
-                style={{...EstilosDialogos.Fondo, opacity: FondoOpacidad}}
+                source={{...Habitacion}}
+                style={{...EstilosDialogos.Fondo, opacity: HabitacionOpacidad}}
+                />
+                <Image
+                source={{...Calle1}}
+                style={{...EstilosDialogos.Fondo, opacity: Calle1Opacidad}}
                 />
                 {/* Ropa */}
                 {/* Kurono */}
@@ -832,7 +858,7 @@ const Main = ({navigation})=>{
                 />
                 {/* Perro */}
                 <Image
-                source={{...Perro}}
+                source={{...PerroImage}}
                 style={{...EstilosDialogos.Personajes,opacity:PerroOpacidad}}
                 cachePolicy={'memory'}
                 />

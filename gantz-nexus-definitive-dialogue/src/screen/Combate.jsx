@@ -14,7 +14,7 @@ const Combate = ({navigation}) => {
     const [PlayerPV, setPlayerPV] = useState(PlayerKurono.PV);
     const [PlayerPA, setPlayerPA] = useState(PlayerKurono.PA);
     const [BloqueoBotones, setBloqueoBotones] = useState(false);
-    const [PlayerOpacidad, setPlayerOpacidad] = useState(0);
+    const [PlayerOpacidad, setPlayerOpacidad] = useState(1);
     const [Narraccion, setNarraccion] = useState(null);
     const ComprobarEstado = () => {
         if(PlayerKurono.PA==0){
@@ -61,7 +61,7 @@ const Combate = ({navigation}) => {
         const CargadoImagenes = (async () => {
             const KuronoAtaqueImage = Asset.fromModule(require('../../assets/img/characters/KuronoPoleronAtaque.png'))
             const MrCebollenseImage = Asset.fromModule(require('../../assets/img/characters/MisterCebollense.png'))
-            const FondoImage = Asset.fromModule(require('../../assets/img/backgrounds/fondo-manga-mision1.jpg'))
+            const FondoImage = Asset.fromModule(require('../../assets/img/backgrounds/FondoCalle1.png'))
             try {
                 ListaImages = [KuronoAtaqueImage.downloadAsync(),MrCebollenseImage.downloadAsync()]
                 await Promise.all[ListaImages];
@@ -90,7 +90,6 @@ const Combate = ({navigation}) => {
             cachePolicy={'memory'}/>
             <View style={EstilosCombate.FondoRecuadroEstadisticas}></View>
             <View style={EstilosCombate.RecuadroNombre}>
-                <Text style={EstilosCombate.Titulos}>Kei</Text>
             </View>
             <View style={{...EstilosCombate.Recuadros,...EstilosCombate.RecuadroEstadisticas}}>
                 <Text
@@ -102,6 +101,8 @@ const Combate = ({navigation}) => {
             <View style={{...EstilosCombate.Recuadros,...EstilosCombate.RecuadroNarracion}}>
                 <Text style={EstilosCombate.Narracion}>{Narraccion}</Text>
             </View>
+            <View style={EstilosCombate.RecuadroTextoNombre}/>
+            <Text style={{...EstilosCombate.Titulos, ...EstilosCombate.TextoNombre}}>Kei</Text>
             <View style={{...EstilosCombate.Recuadros,...EstilosCombate.RecuadroAcciones}}>
                 <TouchableWithoutFeedback
                     onPress={Golpear}
@@ -123,8 +124,9 @@ const Combate = ({navigation}) => {
                     disabled={BloqueoBotones}>
                     <Text style={{...EstilosCombate.Textos,...EstilosCombate.Acciones,...EstilosCombate.Salir}}>Salir</Text>
                 </TouchableWithoutFeedback>
-                <Text style={EstilosCombate.Titulos}>Acciones</Text>
             </View>
+            <View style={EstilosCombate.RecuadroTextoAcciones}/>
+            <Text style={{...EstilosCombate.Titulos,...EstilosCombate.TextoAcciones}}>Acciones</Text>
             </View>
         )
 }
