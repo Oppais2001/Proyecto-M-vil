@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "androidNavigationBar": {
+          "visible": "immersive"
+    },
+    "name": "gantz-nexus-definitive-dialogue",
+    "slug": "gantz-nexus-definitive-dialogue",
+    "version": "1.2.0",
+    "orientation": "landscape",
+    "icon": "./assets/img/logo/logo1.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/img/backgrounds/Esfera-Cerrada.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#B01F00"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/img/backgrounds/Esfera-Cerrada.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.oppais08.gantznexusdefinitivedialogue"
+    },
+    "web": {
+      "favicon": "./assets/img/backgrounds/Esfera-Cerrada.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "17d3e0ba-014a-4bc0-993d-75ff2518d510"
+      }
+    },
+    "owner": "oppais08"
+  }
+}
