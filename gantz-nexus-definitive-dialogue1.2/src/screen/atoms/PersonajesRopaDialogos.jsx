@@ -4,7 +4,7 @@ import { EstilosDialogos } from '../Estilos.jsx';
 import { Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2 , DialogosPrincipales} from '../../components/ClasesDialogos.js';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
-const PersonajesRopaDialogos = ({ indice, KuronoUniforme, KuronoUniformeEnojado, KuronoCamisa, KuronoCamisaEnojado, KuronoTraje, KuronoTrajeEnojado,
+const PersonajesRopaDialogos = ({ indice, setanimacion , KuronoUniforme, KuronoUniformeEnojado, KuronoCamisa, KuronoCamisaEnojado, KuronoTraje, KuronoTrajeEnojado,
     KatoUniforme, KatoTraje, KishimotoDesnuda, KishimotoUniforme, KishimotoTraje,  KishimotoColegial, NishiTraje, PerroImage, Cebollense, Censura}) => {
     /* Opacidades de Imagenes */
         /* Kurono */

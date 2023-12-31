@@ -4,8 +4,9 @@ import { EstilosDialogos } from '../Estilos.jsx';
 import { DialogosPrincipales } from '../../components/ClasesDialogos';
 import Inicio from '../Inicio.jsx';
 
-const BotonesDialogos = ({ indice, setindice}) => {
+const BotonesDialogos = ({ indice, setindice, animacion}) => {
     const [ proposicion, setproposicion ] = useState(undefined);
+    console.log(animacion)
     useEffect(()=>{
         if(indice<78){
             setproposicion(indice>0);
@@ -29,13 +30,15 @@ const BotonesDialogos = ({ indice, setindice}) => {
         return (
         <>
             <TouchableWithoutFeedback
-                onPress={Avanzar}>
+                onPress={Avanzar}
+                disabled={animacion}>
                 <View
                 style={{...EstilosDialogos.botonesDialogos,...EstilosDialogos.boton1}}
                 />
             </TouchableWithoutFeedback>
             <TouchableWithoutFeedback
-                onPress={Retroceder}>
+                onPress={Retroceder}
+                disabled={animacion}>
                 <View
                 style={{...EstilosDialogos.botonesDialogos,...EstilosDialogos.boton2}}
                 />

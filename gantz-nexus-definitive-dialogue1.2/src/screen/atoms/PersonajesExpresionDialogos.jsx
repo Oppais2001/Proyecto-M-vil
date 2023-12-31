@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
-import { Image } from 'react-native';
+import { Image } from 'expo-image';
 import { EstilosDialogos } from '../Estilos.jsx';
 import { Kurono, Kato, Kishimoto, Nishi, Perro, Hojo, Sadako, Cebollin, MrCebollin, decision1, decision2 , DialogosPrincipales} from '../../components/ClasesDialogos.js';
-import { MotiImage } from 'moti';
 
-const PersonajesExpresionDialogos = ({ indice, KuronoSerio, KuronoNervioso, KuronoFeliz, KuronoTriste, KuronoSorprendido, KatoSerio,
+
+const PersonajesExpresionDialogos = ({ indice, setanimacion , KuronoSerio, KuronoNervioso, KuronoFeliz, KuronoTriste, KuronoSorprendido, KatoSerio,
     KatoNervioso, KatoFeliz, KatoTriste, KatoSorprendido, KishimotoSeria, KishimotoNerviosa, KishimotoFeliz,  KishimotoTriste,
     KishimotoParpadeo1, KishimotoParpadeo2, KishimotoParpadeo3, NishiSerio}) => {
     /* Opacidades de Imagenes */
@@ -31,8 +31,8 @@ const PersonajesExpresionDialogos = ({ indice, KuronoSerio, KuronoNervioso, Kuro
     const [KishimotoParpadeo3Opacidad, setKishimotoParpadeo3Opacidad] = useState(0);
         /* Nishi */
     const [NishiSerioOpacidad, setNishiSerioOpacidad] = useState(0);
+    /* Funciones */
     /* Funcion que limpia la pantalla de imagenes*/
-    let indiceDecisiones;
     const BorrarExpresion = () =>{
         console.log('Borrado Expresion')
         /*Kurono*/
@@ -60,6 +60,7 @@ const PersonajesExpresionDialogos = ({ indice, KuronoSerio, KuronoNervioso, Kuro
     }
     /* Funcion encargada de tomar el indice y cambiar el personaje o mantenerlo en pantalla */
     indice = indice + 1;
+    let indiceDecisiones;
     if (decision1.opcion){
         if(indice>80){
             indiceDecisiones = 8;
@@ -104,12 +105,12 @@ const PersonajesExpresionDialogos = ({ indice, KuronoSerio, KuronoNervioso, Kuro
                 }
             }else{
                 if(indice==58){
-                    console.log('Animacion', KuronoSerioOpacidad)
                     if(KuronoSerioOpacidad==1){
                         setKuronoSerioOpacidad(0);
                     }else if(KishimotoSeriaOpacidad==1){
                         setKishimotoSeriaOpacidad(0);
                     }
+                    console.log('Animacion')
                 }else{
                     console.log('Serio por defecto')
                     if(KuronoSerioOpacidad==0){
@@ -299,24 +300,6 @@ const PersonajesExpresionDialogos = ({ indice, KuronoSerio, KuronoNervioso, Kuro
             setNishiSerioOpacidad(0);
         }
     }
-    useEffect(()=>{
-        /* Uso de useEffect para animaciones*/
-        if(indice==53){
-            setTimeout(() => {
-                if (KishimotoParpadeo2Opacidad==0){
-                    BorrarExpresion();
-                    setKishimotoParpadeo2Opacidad(1);
-                }
-            }, 1000);
-        }else if(indice==56){
-            setTimeout(() => {
-                if (KishimotoParpadeo3Opacidad==0){
-                    BorrarExpresion();
-                    setKishimotoParpadeo3Opacidad(1);
-                }
-            }, 1000);
-        }
-    },[indice])
     return (
         <>
             {/*Kurono*/}

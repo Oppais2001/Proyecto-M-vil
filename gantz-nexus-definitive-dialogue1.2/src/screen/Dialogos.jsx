@@ -9,10 +9,13 @@ import BotonesDialogos from './atoms/BotonesDialogos.jsx';
 import Fondos from './atoms/Fondos.jsx';
 import RecuadroDialogosEsfera from './atoms/RecuadroDialogosEsfera.jsx';
 import SistemaDecisiones from './atoms/SistemaDecisiones.jsx';
+import PersonajesAnimados from './atoms/PersonajesAnimados.jsx';
 
 const Main = ({navigation})=>{
+    /* Variables de uso general de la app*/
     const [Indice, setIndice] = useState(0);
     const [ready, setReady] = useState(false);
+    const [Animacion, setAnimacion] = useState(false);
      /* Cargado de Imagenes */
     /* Fondos */
     const [Habitacion, setHabitacion] = useState(null);
@@ -180,22 +183,23 @@ const Main = ({navigation})=>{
         <>
             <Fondos indice={Indice} Habitacion={Habitacion} Calle1={Calle1}/>
             <PersonajesRopaDialogos
-            indice={Indice} KuronoUniforme={KuronoUniforme} KuronoUniformeEnojado={KuronoUniformeEnojado} KuronoCamisa={KuronoCamisa}
+            indice={Indice} setanimacion={setAnimacion} KuronoUniforme={KuronoUniforme} KuronoUniformeEnojado={KuronoUniformeEnojado} KuronoCamisa={KuronoCamisa}
             KuronoCamisaEnojado={KuronoCamisaEnojado} KuronoTraje={KuronoTraje} KuronoTrajeEnojado={KuronoTrajeEnojado}
             KatoUniforme={KatoUniforme} KatoTraje={KatoTraje} KishimotoDesnuda={KishimotoDesnuda} KishimotoUniforme={KishimotoUniforme}
             KishimotoTraje={KishimotoTraje} KishimotoColegial={KishimotoColegial} NishiTraje={NishiTraje} Censura={Censura}
             PerroImage={PerroImage}/>
             <PersonajesExpresionDialogos
-            indice={Indice} KuronoSerio={KuronoSerio} KuronoNervioso={KuronoNervioso} KuronoFeliz={KuronoFeliz}KuronoTriste={KuronoTriste}
-            KuronoSorprendido={KuronoSorprendido} KatoSerio={KatoSerio} KatoNervioso={KatoNervioso}KatoFeliz={KatoFeliz}
+            indice={Indice} setanimacion={setAnimacion} KuronoSerio={KuronoSerio} KuronoNervioso={KuronoNervioso} KuronoFeliz={KuronoFeliz}
+            KuronoTriste={KuronoTriste} KuronoSorprendido={KuronoSorprendido} KatoSerio={KatoSerio} KatoNervioso={KatoNervioso}KatoFeliz={KatoFeliz}
             KatoTriste={KatoTriste} KatoSorprendido={KatoSorprendido} KishimotoSeria={KishimotoSeria} KishimotoNerviosa={KishimotoSeria}
             KishimotoFeliz={KishimotoFeliz} KishimotoTriste={KishimotoTriste} KishimotoParpadeo1={KishimotoParpadeo1}
             KishimotoParpadeo2={KishimotoParpadeo2} KishimotoParpadeo3={KishimotoParpadeo3} NishiSerio={NishiSerio}/>
-            <RecuadroDialogosEsfera indice = {Indice} Cebollin={CebollenseEsfera}/>
+            <PersonajesAnimados indice={Indice} setanimacion={setAnimacion} KuronoSerio={KuronoSerio} KuronoCamisa={KuronoCamisa}/>
+            <RecuadroDialogosEsfera indice = {Indice} Cebollin={CebollenseEsfera} />
             <RecuadroDialogos indice = {Indice}/>
-            <SistemaDecisiones indice={Indice} setindice={setIndice}/>
-            <BotonesDialogos indice={Indice} setindice={setIndice}/>
+            <SistemaDecisiones indice={Indice} setindice={setIndice} animacion={Animacion}/>
+            <BotonesDialogos indice={Indice} setindice={setIndice} animacion={Animacion}/>
         </>
     )
 }
-export default Main;
+export default Main; 
