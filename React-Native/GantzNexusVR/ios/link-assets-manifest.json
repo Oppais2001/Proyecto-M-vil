@@ -1,0 +1,385 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/adaptive-icon.png",
+      "sha1": "19b53640a95efdc2ccc7fc20f3ea4d0d381bb5c4"
+    },
+    {
+      "path": "assets/favicon.png",
+      "sha1": "cb25ca74ddc488c91522b0ae68fc846fac7f4174"
+    },
+    {
+      "path": "assets/fonts/7LED.ttf",
+      "sha1": "c4658dfbc1fbe545761480892978cf3a5cc0a655"
+    },
+    {
+      "path": "assets/fonts/digital-7.ttf",
+      "sha1": "e76e159f9de13b1c91e03c2933b3f9454788050e"
+    },
+    {
+      "path": "assets/fonts/DS-DIGIT.TTF",
+      "sha1": "44b13f9de8eee6c1aee3601c1a7f6d662b401616"
+    },
+    {
+      "path": "assets/fonts/Full-Pack.ttf",
+      "sha1": "fd69702d79d5fea4763f565d10ff08d241cb79ad"
+    },
+    {
+      "path": "assets/fonts/gantz.ttf",
+      "sha1": "207c38c3e1368d46b5717563815baa48f136dced"
+    },
+    {
+      "path": "assets/fonts/Genjiro.ttf",
+      "sha1": "ee20a068a663a50ad96a794444fa765c9fe494c9"
+    },
+    {
+      "path": "assets/fonts/Harukaze.ttf",
+      "sha1": "f0064783109d204cef9099ae6ac14233774a2aaf"
+    },
+    {
+      "path": "assets/fonts/JMH_Savage.ttf",
+      "sha1": "ccf58888ace52e3bb9224878f2ccf91340dc6c34"
+    },
+    {
+      "path": "assets/fonts/New_Wild_Words.ttf",
+      "sha1": "139eee7170566bd5682351f78cab3d8f1d4a746e"
+    },
+    {
+      "path": "assets/fonts/Open24DisplaySt.ttf",
+      "sha1": "1cd1baf16d47a3855bc01bcf87986ef0e11af021"
+    },
+    {
+      "path": "assets/fonts/upheavtt.ttf",
+      "sha1": "73fc04635530cd69e9eb341f771808918002a93d"
+    },
+    {
+      "path": "assets/icon.png",
+      "sha1": "3f71f5a8458c06b83424cc33e1f2481f601199ea"
+    },
+    {
+      "path": "assets/img/backgrounds/Afuera.png",
+      "sha1": "b657bca8d9e8356e7aaa04c85c004baf3014f820"
+    },
+    {
+      "path": "assets/img/backgrounds/Afuera1.png",
+      "sha1": "7f45f989c2982984821df8781f6e8492883e7cb6"
+    },
+    {
+      "path": "assets/img/backgrounds/Esfera-Abierta.png",
+      "sha1": "da46b80471adbe3f30b8c9c8c1c939d6ed08017b"
+    },
+    {
+      "path": "assets/img/backgrounds/Esfera-Cerrada.png",
+      "sha1": "e34ed0423e351b554c132eededa605c02b15f25a"
+    },
+    {
+      "path": "assets/img/backgrounds/Esfera-Cerrada1.png",
+      "sha1": "6f346461602ca19ec77a41e0a2942da9dbf77ca4"
+    },
+    {
+      "path": "assets/img/backgrounds/fondo-manga-mision1.jpg",
+      "sha1": "6991cddbec18536ceb3232cb2209718423fb55c5"
+    },
+    {
+      "path": "assets/img/backgrounds/FondoCalle1.png",
+      "sha1": "b58d1c0b2128c5591e481ace48b937f20bdbbe4e"
+    },
+    {
+      "path": "assets/img/backgrounds/HabitacionDia.png",
+      "sha1": "d3a129fec1c3c27d28e99a1aa6468b7774046337"
+    },
+    {
+      "path": "assets/img/backgrounds/HabitacionNoche.png",
+      "sha1": "a5336d015d93cd03fb1ae6d21d316cc1ba021c83"
+    },
+    {
+      "path": "assets/img/backgrounds/PuertaEsferaDerecha.png",
+      "sha1": "d0131e349ccf8185b19e9fe405b1aac0d87d2789"
+    },
+    {
+      "path": "assets/img/backgrounds/PuertaEsferaIzquierda.png",
+      "sha1": "dd24bc952f871ae1f84c7d9a74a8809db9d895af"
+    },
+    {
+      "path": "assets/img/characters/ArmaAbierta.png",
+      "sha1": "41fe5b8473f2f334303034d7dd43bb6854c39c80"
+    },
+    {
+      "path": "assets/img/characters/Cebollin1.png",
+      "sha1": "78d594a847c16fa7aadac2bbf34d34b98679de84"
+    },
+    {
+      "path": "assets/img/characters/Cebollin2.png",
+      "sha1": "9ca5c9e8ad572ff4e33c9aac08a78c9846498553"
+    },
+    {
+      "path": "assets/img/characters/CebollinEsfera.png",
+      "sha1": "5aa287edf5117c5601658bb4a3050fb22666f9dd"
+    },
+    {
+      "path": "assets/img/characters/HojoSerio.png",
+      "sha1": "f6248da1534f3461019015f8dd0da62c1e3893d2"
+    },
+    {
+      "path": "assets/img/characters/HojoTraje.png",
+      "sha1": "ca4e4f883e6221cb37bb1bf5471111539aee88c2"
+    },
+    {
+      "path": "assets/img/characters/HojoUniforme.png",
+      "sha1": "04bfdc3f2a31b34844545d430be3b0e224dc60b2"
+    },
+    {
+      "path": "assets/img/characters/Jefe-Tanaka.png",
+      "sha1": "3c78f76f6879ae530b0c6e4ca3dac6b0ff994722"
+    },
+    {
+      "path": "assets/img/characters/KatoEnojado.png",
+      "sha1": "924e5b3f24e85452e5256a55f17ec8b4b4369fd6"
+    },
+    {
+      "path": "assets/img/characters/KatoFeliz.png",
+      "sha1": "cba7996e78967c0a3626ccb40f7127563ffb92c5"
+    },
+    {
+      "path": "assets/img/characters/KatoNervioso.png",
+      "sha1": "532552bb341a03e5f4092c2d90acdfc2e7c40506"
+    },
+    {
+      "path": "assets/img/characters/KatoSerio.png",
+      "sha1": "586b85ba759ff82d7fcebbed9c667b6542764fb9"
+    },
+    {
+      "path": "assets/img/characters/KatoSorprendido.png",
+      "sha1": "b5af8e4fe24313fa58d986f5ad1aa3dc891a2302"
+    },
+    {
+      "path": "assets/img/characters/KatoTraje.png",
+      "sha1": "5ed97742d7b79cd37fb42abe571f537f93668eb3"
+    },
+    {
+      "path": "assets/img/characters/KatoTraje1.png",
+      "sha1": "2c982bad5ab66a8a3423a7d4ad0b87652b92eed3"
+    },
+    {
+      "path": "assets/img/characters/KatoTriste.png",
+      "sha1": "afe06ac111d91546143f15eb770ec827269698d1"
+    },
+    {
+      "path": "assets/img/characters/KatoUniforme.png",
+      "sha1": "68eb3914cda2da394ded227183443bad9fe7948d"
+    },
+    {
+      "path": "assets/img/characters/KatoUniforme1.png",
+      "sha1": "b1ba49956a0f232fd48a6d7b72b68c31ce57a4ab"
+    },
+    {
+      "path": "assets/img/characters/Kishimoto.png",
+      "sha1": "da0ee9bbd03adbdd13fdddc626d4469217d83f9e"
+    },
+    {
+      "path": "assets/img/characters/KishimotoColegiala.png",
+      "sha1": "f25744c726af4f6aa49ab0d9125afc3e95b11d69"
+    },
+    {
+      "path": "assets/img/characters/KishimotoFeliz.png",
+      "sha1": "0c4f38ac874f3a2aa74f8f8072658a06c017b05d"
+    },
+    {
+      "path": "assets/img/characters/KishimotoNerviosa.png",
+      "sha1": "92978fa0cd35a1e164d86dfd2a8e5e0ef210a215"
+    },
+    {
+      "path": "assets/img/characters/KishimotoParpadeo1.png",
+      "sha1": "597d05aedca9e3c97003993a4c8b3efe75432b83"
+    },
+    {
+      "path": "assets/img/characters/KishimotoParpadeo2.png",
+      "sha1": "d4c05272d757753cbaf72fe20929130049fd17f3"
+    },
+    {
+      "path": "assets/img/characters/KishimotoParpadeo3.png",
+      "sha1": "a5579fd1c96701ee6270d42b6a85d84619ca4cce"
+    },
+    {
+      "path": "assets/img/characters/KishimotoSeria.png",
+      "sha1": "93655fbc4d5627c152246acb58a491450e5a7613"
+    },
+    {
+      "path": "assets/img/characters/KishimotoTraje.png",
+      "sha1": "7ce80d5548b4352fca8f0f49e54a64ad9c45507b"
+    },
+    {
+      "path": "assets/img/characters/KishimotoTriste.png",
+      "sha1": "1dbeaab8a1c80ce2d3fb59ec6de52ae5edeb719e"
+    },
+    {
+      "path": "assets/img/characters/KishimotoUniforme.png",
+      "sha1": "feaba4a342af95fa75380419cd02507ca3c5b0e0"
+    },
+    {
+      "path": "assets/img/characters/kuronoaermadisparo.png",
+      "sha1": "f20767f634865920c7bed5c3daf1cd10871457fa"
+    },
+    {
+      "path": "assets/img/characters/KuronoCamisa.png",
+      "sha1": "c716d9bd6211a5e36313a414dda7a95cb66200b6"
+    },
+    {
+      "path": "assets/img/characters/KuronoCamisaEnojado.png",
+      "sha1": "fce41b9e58329cff5e8b2cf65b460d5ca6523419"
+    },
+    {
+      "path": "assets/img/characters/KuronoFeliz.png",
+      "sha1": "59ee053e2e7e68eefd3c9aa4d80bd148c72768be"
+    },
+    {
+      "path": "assets/img/characters/KuronoNervioso.png",
+      "sha1": "3799305d6ed6f9181be4c27a11a877f4ad36f351"
+    },
+    {
+      "path": "assets/img/characters/KuronoPoleron.png",
+      "sha1": "1ae9db1de0dbb0c716f9c73e999c0f44c3b2d99e"
+    },
+    {
+      "path": "assets/img/characters/KuronoPoleronAtaque.png",
+      "sha1": "8a895ab4956711bfa96150077785a140a59a4795"
+    },
+    {
+      "path": "assets/img/characters/KuronoPoleronAtaque1.png",
+      "sha1": "f20767f634865920c7bed5c3daf1cd10871457fa"
+    },
+    {
+      "path": "assets/img/characters/KuronoPoleronAtaque2.png",
+      "sha1": "eae9e50f7fe7ecc49cef6791356f0b835e8ee9a3"
+    },
+    {
+      "path": "assets/img/characters/KuronoPoleronEnojado.png",
+      "sha1": "ce4d1308e027c57823899d9300a149ec01357f6f"
+    },
+    {
+      "path": "assets/img/characters/KuronoSerio.png",
+      "sha1": "870cb753d5cfc5ee3ecdb3e07953b9b73272823f"
+    },
+    {
+      "path": "assets/img/characters/kuronoshot.png",
+      "sha1": "d80c495e5c1cc29c325eb357be317d78ec69b89f"
+    },
+    {
+      "path": "assets/img/characters/KuronoSonriendo.png",
+      "sha1": "6176e5672fa1813e03c966db045004acba7cae14"
+    },
+    {
+      "path": "assets/img/characters/KuronoSorprendido.png",
+      "sha1": "0c97e8d4e248d05145c976b7768943a75b07cea5"
+    },
+    {
+      "path": "assets/img/characters/KuronoTraje.png",
+      "sha1": "515869ce48b3001290286ddcbe699e1f2c8dc590"
+    },
+    {
+      "path": "assets/img/characters/KuronoTrajeEnojado.png",
+      "sha1": "eaccc180839acb4cb8f413fd9157a8cad3f66654"
+    },
+    {
+      "path": "assets/img/characters/KuronoTriste.png",
+      "sha1": "d1e7eec26a9679d6729cb0ac7e2f21f07d739033"
+    },
+    {
+      "path": "assets/img/characters/KuronoUniforme.png",
+      "sha1": "b915cb69a0e5cb6fff11cbf2ec6846bce0c6ff5e"
+    },
+    {
+      "path": "assets/img/characters/KuronoUniformeEnojado.png",
+      "sha1": "67991aac076bf629df2e2dd881972ef2c625f702"
+    },
+    {
+      "path": "assets/img/characters/MenuConfiguraciones.png",
+      "sha1": "58eb5d7c6a725e843cacd1a65062b4b2ecc4dc1e"
+    },
+    {
+      "path": "assets/img/characters/MisterCebollense.png",
+      "sha1": "0d8b310df37ea9b789c4dff7ef96eb14ba24acc0"
+    },
+    {
+      "path": "assets/img/characters/NishiEnojado.png",
+      "sha1": "25575ff28195965fed6c381532bd2b228b068897"
+    },
+    {
+      "path": "assets/img/characters/NishiSerio.png",
+      "sha1": "ccd589130db811a4b058289502a40f06943e4399"
+    },
+    {
+      "path": "assets/img/characters/NishiTraje.png",
+      "sha1": "acc7d6248171fa19aab7fb339dc31596aca00896"
+    },
+    {
+      "path": "assets/img/characters/Perro.png",
+      "sha1": "ec27c017c85825f8d585b15bace24a005b5f1cf2"
+    },
+    {
+      "path": "assets/img/characters/Sadayo.png",
+      "sha1": "3ab1f5636eca123f99f47df058d67749f774eb05"
+    },
+    {
+      "path": "assets/img/characters/SadayoTraje.png",
+      "sha1": "b01d73615aad8aad62ddfb59a18ec2df5e3507f8"
+    },
+    {
+      "path": "assets/img/characters/TanakaAtaque.png",
+      "sha1": "6dd1494c5eeb3d353d1a5187d6662f288a545ff4"
+    },
+    {
+      "path": "assets/img/characters/TanakaFeliz.png",
+      "sha1": "6d97bd67f559fae065f4802eaedff00cf1c7ade6"
+    },
+    {
+      "path": "assets/img/characters/TanakaFurioso.png",
+      "sha1": "dd18ed34393736e9bedaa652799583dc808a2b1e"
+    },
+    {
+      "path": "assets/img/characters/TanakaSinTraje.png",
+      "sha1": "a4bdbfb1e3feb2ba674a160f9aa6a9ecc5a2b36f"
+    },
+    {
+      "path": "assets/img/effects/censura.png",
+      "sha1": "14c67ba2de3664a5f05676d9f06479333e1230fd"
+    },
+    {
+      "path": "assets/img/effects/EfectoArma1.png",
+      "sha1": "60ed8e0fd0e31f1ae6aa9455d238a17225a2b0ef"
+    },
+    {
+      "path": "assets/img/effects/EfectoArma2.png",
+      "sha1": "618399ffda1d5adfde3f376d2cd6ff074ac59f43"
+    },
+    {
+      "path": "assets/img/effects/TanakasAtaqueFrame1.png",
+      "sha1": "78140fed8652d675a949bbb753608be52a454309"
+    },
+    {
+      "path": "assets/img/effects/TanakasAtaqueFrame2.png",
+      "sha1": "3fcdb3bd81595c52fd264b5863298913735f77e8"
+    },
+    {
+      "path": "assets/img/FondoInicio.jpg",
+      "sha1": "8106b0dbd44554ec7c7cfd801a6b1b1fe2f6901e"
+    },
+    {
+      "path": "assets/img/logo/logo.png",
+      "sha1": "0deb567050781c3d7dd68549a042fbffc7db9b4d"
+    },
+    {
+      "path": "assets/img/logo/logo1.png",
+      "sha1": "4f461ee8bb70be3a23b8a2e4de9a02610217cba2"
+    },
+    {
+      "path": "assets/img/Portada.png",
+      "sha1": "5ad2675d1a888b0c491e287b24a0e2bbe0308900"
+    },
+    {
+      "path": "assets/splash.png",
+      "sha1": "206a875d5dc6f23eb9515bebd899ebb9f56eca82"
+    }
+  ]
+}

@@ -1,0 +1,1073 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* GantzNexusVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* GantzNexusVRTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-GantzNexusVR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-GantzNexusVR.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7699B88040F8A987B510C191 /* libPods-GantzNexusVR-GantzNexusVRTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GantzNexusVR-GantzNexusVRTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		495EC0FBCAAB493DBB4E9D30 /* 7LED.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C78889233FB41ECA25E24DF /* 7LED.ttf */; };
+		415D1A70B17A4A3F92C856C9 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EAFA93311ED4E0C92B3EF2F /* digital-7.ttf */; };
+		04E39810FCF7461FA077B186 /* Full-Pack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BE0557D418B4050B97F7693 /* Full-Pack.ttf */; };
+		A4E497FBF44B4DF989567B13 /* gantz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA04297145354EF0AC861AC1 /* gantz.ttf */; };
+		453079BE5F6A475384BC59D3 /* Genjiro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60C0AD4F619440EBA41C69C2 /* Genjiro.ttf */; };
+		393DF218F7124142B8C0B05F /* Harukaze.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45D19B2978D944F9A1629594 /* Harukaze.ttf */; };
+		9DF3336E22C345E1A6203AE4 /* JMH_Savage.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A1510239EBB44DABFA72EA5 /* JMH_Savage.ttf */; };
+		1A12D78A49DA4857A5D6A2FB /* New_Wild_Words.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A8B607568484AA7804658CF /* New_Wild_Words.ttf */; };
+		1C01A6CD4D614817A3069A28 /* Open24DisplaySt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11549AA707AB46608434A26F /* Open24DisplaySt.ttf */; };
+		0BEC58A2B7C948118A00E9FB /* upheavtt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF09EB4AEF4B47749DA0900F /* upheavtt.ttf */; };
+		10ED2C0BE694437DA81E853B /* DS-DIGIT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 618116AFAC184A5BA7474501 /* DS-DIGIT.TTF */; };
+		F5B2D1F04BE241E8B38CD0CA /* adaptive-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EF03E2A49FAC475C8AB2E61A /* adaptive-icon.png */; };
+		5F2C4B6930EC4292B36CDBD1 /* favicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0D4832127D45A783B9653B /* favicon.png */; };
+		10BA9E462EDF4861AD4F41BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 70099A2C5906462AB6F09948 /* icon.png */; };
+		AE2ACB82B1104948B218B40F /* Afuera.png in Resources */ = {isa = PBXBuildFile; fileRef = EC660994E6D94C989A570A5F /* Afuera.png */; };
+		4E9A8A2AFFE9494DB33D1D68 /* Afuera1.png in Resources */ = {isa = PBXBuildFile; fileRef = 93C09EBF0A244576BAE452E5 /* Afuera1.png */; };
+		4E72814BEBCE487C96C9AEF6 /* Esfera-Abierta.png in Resources */ = {isa = PBXBuildFile; fileRef = DE5AE0E5B3764755BE4660B9 /* Esfera-Abierta.png */; };
+		17D34BBB6590477EBB497C18 /* Esfera-Cerrada.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D3D805A390483884E0312E /* Esfera-Cerrada.png */; };
+		EBD1B1E3E2D3407EAAC274FD /* Esfera-Cerrada1.png in Resources */ = {isa = PBXBuildFile; fileRef = 59D81CF2C16947169455FE35 /* Esfera-Cerrada1.png */; };
+		4737DC56C98B496BA2DD65D2 /* fondo-manga-mision1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCE24B3D50104A80B8E0F439 /* fondo-manga-mision1.jpg */; };
+		026370A4915E4F7DBB4C2068 /* FondoCalle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9257C6B19C604E7A836A6E5A /* FondoCalle1.png */; };
+		02CF15DB461043458578122D /* HabitacionDia.png in Resources */ = {isa = PBXBuildFile; fileRef = 263B3943472A48AC9E6653C0 /* HabitacionDia.png */; };
+		497D454D4495480DB3BBE644 /* HabitacionNoche.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ED86FCE575F48E4AB5CF901 /* HabitacionNoche.png */; };
+		1DC488CA85E14B069A049868 /* PuertaEsferaDerecha.png in Resources */ = {isa = PBXBuildFile; fileRef = B01AF1557E4043FD9441AD56 /* PuertaEsferaDerecha.png */; };
+		68214B78708549C19BD8079F /* PuertaEsferaIzquierda.png in Resources */ = {isa = PBXBuildFile; fileRef = 66014911944B4D73A9D8E5B5 /* PuertaEsferaIzquierda.png */; };
+		0F06A203AA2D4585AB9A6CB6 /* ArmaAbierta.png in Resources */ = {isa = PBXBuildFile; fileRef = 69B61545A2214CB6A4A7E3DC /* ArmaAbierta.png */; };
+		55B833693B964039B412D353 /* Cebollin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 053D9C6DD95B49329093A77E /* Cebollin1.png */; };
+		956CDFBA22CA4F6B9AB57CDA /* Cebollin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1776FB2A882241588467B659 /* Cebollin2.png */; };
+		3E829ECBA89D437CA10F9899 /* CebollinEsfera.png in Resources */ = {isa = PBXBuildFile; fileRef = F499839EA4C04D4197C5B4EA /* CebollinEsfera.png */; };
+		FA4E52D5844F40BB80EB57CB /* HojoSerio.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E10820B68AC44D3BDD7A1D2 /* HojoSerio.png */; };
+		3E09CCF68D854AC9A86276BA /* HojoTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = 446486EE040C41E196B406AA /* HojoTraje.png */; };
+		7A9B9EBC1C2C48938148CCCE /* HojoUniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = D0F98029FD0E402E94F074AE /* HojoUniforme.png */; };
+		E951B536041C4259961B8E34 /* Jefe-Tanaka.png in Resources */ = {isa = PBXBuildFile; fileRef = D56737E48D9440A6B670FE82 /* Jefe-Tanaka.png */; };
+		CBAA1A880A7E4FB98BFB62B5 /* KatoEnojado.png in Resources */ = {isa = PBXBuildFile; fileRef = 2535076E09DF424392B60A04 /* KatoEnojado.png */; };
+		550B32092A234BE69E28AC90 /* KatoFeliz.png in Resources */ = {isa = PBXBuildFile; fileRef = 2108702F792A4950B1E973C5 /* KatoFeliz.png */; };
+		CEFF4A96B2374BECBDB5C059 /* KatoNervioso.png in Resources */ = {isa = PBXBuildFile; fileRef = 958956E17EEF43FDA10C4F4C /* KatoNervioso.png */; };
+		24AB0257B897470386ACF191 /* KatoSerio.png in Resources */ = {isa = PBXBuildFile; fileRef = 2283C3FF19BF4D70B56FD5A0 /* KatoSerio.png */; };
+		8ACD8FF49E3A4BAAA53DBC5E /* KatoSorprendido.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F70427CEF8429191FD75BD /* KatoSorprendido.png */; };
+		9AD686AB53BC42F7A8671C14 /* KatoTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = C39C78C300004AB494A5E70A /* KatoTraje.png */; };
+		EF7F703CA90C444FA35F8FDC /* KatoTraje1.png in Resources */ = {isa = PBXBuildFile; fileRef = 08984931B96D4287B32C1A36 /* KatoTraje1.png */; };
+		8049752730F34CFE8D59B07B /* KatoTriste.png in Resources */ = {isa = PBXBuildFile; fileRef = CBABB1581AFB4A3E91B92D0B /* KatoTriste.png */; };
+		A4C13418C3B940CDB7E31A99 /* KatoUniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = E2ABB0A9310142FEA4677430 /* KatoUniforme.png */; };
+		96AEFD260F594CF4B9E66B83 /* KatoUniforme1.png in Resources */ = {isa = PBXBuildFile; fileRef = F0AE2771D3274AE2B2048BBB /* KatoUniforme1.png */; };
+		7086CD08C9814457A671999E /* Kishimoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 26DD480A3340482DA596F70B /* Kishimoto.png */; };
+		12F74B7A48D64CA9A8AFE0B9 /* KishimotoColegiala.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A1630543F94ED0A9F737E2 /* KishimotoColegiala.png */; };
+		81651E0D582C49EC997E4A77 /* KishimotoFeliz.png in Resources */ = {isa = PBXBuildFile; fileRef = 788456B69E164E62AD0DC7EC /* KishimotoFeliz.png */; };
+		764B7A02277D4CF3BD528DAC /* KishimotoNerviosa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC87F397F7848368646FD0D /* KishimotoNerviosa.png */; };
+		FBD6692787684C21A4766860 /* KishimotoParpadeo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75E35DD8185C485287E08D4F /* KishimotoParpadeo1.png */; };
+		35120E172F954C1F99C38237 /* KishimotoParpadeo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 29448E3AC0A04FE8AB872BF8 /* KishimotoParpadeo2.png */; };
+		5504EF429ECB4C8BB3C1DC12 /* KishimotoParpadeo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 82DEFF9553354713A420EA1E /* KishimotoParpadeo3.png */; };
+		F3B76382C8D04F1D9CBCE44B /* KishimotoSeria.png in Resources */ = {isa = PBXBuildFile; fileRef = F8348833BF1F42BAA9D731BB /* KishimotoSeria.png */; };
+		D89201C2C0A64C418FB0F744 /* KishimotoTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = 31B7D9E34A284D8A958189C8 /* KishimotoTraje.png */; };
+		5782CED93C134195AE4EF8F1 /* KishimotoTriste.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F1CF11E83AC4E9F8E124092 /* KishimotoTriste.png */; };
+		CA78A4E2ADC0439C9F88033F /* KishimotoUniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = B9001A3E309B4FD5A11C0EA4 /* KishimotoUniforme.png */; };
+		B21BD0EEC6454E73A8CD8249 /* kuronoaermadisparo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EADE2DE4C534DFFA1C8F00C /* kuronoaermadisparo.png */; };
+		7210E6696D5C4BBA9DE86DEB /* KuronoCamisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 5909626FDA7849B684BE7D8C /* KuronoCamisa.png */; };
+		91D99BD784404EC1B0BB4F46 /* KuronoCamisaEnojado.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C15EA81E25E46989C7881E8 /* KuronoCamisaEnojado.png */; };
+		023C7FEA880A4F4F9836E7CF /* KuronoFeliz.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5F67741C1646C3A268AE0F /* KuronoFeliz.png */; };
+		84A79EC4E94A4BDDB837899E /* KuronoNervioso.png in Resources */ = {isa = PBXBuildFile; fileRef = 5192EC4BAA50408E91A7F8D3 /* KuronoNervioso.png */; };
+		F5EDC813022F4767B0DB7259 /* KuronoPoleron.png in Resources */ = {isa = PBXBuildFile; fileRef = 845CA16A21F7466F94CD876A /* KuronoPoleron.png */; };
+		8633612A5952492792E97042 /* KuronoPoleronAtaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 70F948A986A240EE9A4D41BB /* KuronoPoleronAtaque.png */; };
+		0B2DCE9B5ECE4BDEAB50E173 /* KuronoPoleronAtaque1.png in Resources */ = {isa = PBXBuildFile; fileRef = C2E74F2E9D454583991955C1 /* KuronoPoleronAtaque1.png */; };
+		49B40960C27845C2BCE9061A /* KuronoPoleronAtaque2.png in Resources */ = {isa = PBXBuildFile; fileRef = EA78546109DF4A9A80B53DB4 /* KuronoPoleronAtaque2.png */; };
+		D63A2D2043424A06B9C0F439 /* KuronoPoleronEnojado.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E85D1CB510C40B0AE656BFC /* KuronoPoleronEnojado.png */; };
+		C767FF265F5B43C781B4EFC0 /* KuronoSerio.png in Resources */ = {isa = PBXBuildFile; fileRef = 427FD254EE6648ED9F0110F0 /* KuronoSerio.png */; };
+		CEC52770F6EA4637B59BD45E /* kuronoshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C95AF17F7CD498DBF9BA2D8 /* kuronoshot.png */; };
+		83C6F6E469BB4C4195307ED5 /* KuronoSonriendo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EE55B5B98664B2E9587D4E3 /* KuronoSonriendo.png */; };
+		2B4A8372AA994442B72B548D /* KuronoSorprendido.png in Resources */ = {isa = PBXBuildFile; fileRef = 66FF0F02DDAD4354907611F7 /* KuronoSorprendido.png */; };
+		27AEC877A7E34076A8C111BA /* KuronoTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DFD7CA3882D4EBB8546D2EA /* KuronoTraje.png */; };
+		5F8C58F37DF542CD90ABB40D /* KuronoTrajeEnojado.png in Resources */ = {isa = PBXBuildFile; fileRef = 67130E9231A142978425E524 /* KuronoTrajeEnojado.png */; };
+		D03A0B5BEA0F4E0D80B78BF6 /* KuronoTriste.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A3C3D6E6E4AFEA42E633E /* KuronoTriste.png */; };
+		82AD7A26B9A8438F80356ACF /* KuronoUniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = CA818749C3534165BD590AD8 /* KuronoUniforme.png */; };
+		7A48CA72098842A6A50C8BBB /* KuronoUniformeEnojado.png in Resources */ = {isa = PBXBuildFile; fileRef = D94B9DF5F0D449B6B7F37A13 /* KuronoUniformeEnojado.png */; };
+		00F44414FA0E4DF38BF5BD3B /* MenuConfiguraciones.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F4457FF20CB4C289AD88068 /* MenuConfiguraciones.png */; };
+		D639687A36C948528E250FD0 /* MisterCebollense.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C893136AE0A4F599754D27D /* MisterCebollense.png */; };
+		7732E58EB5E143B4925EE26A /* NishiEnojado.png in Resources */ = {isa = PBXBuildFile; fileRef = 77336B718EDA4CE682A803E9 /* NishiEnojado.png */; };
+		AD92686E92B747919D70FDD5 /* NishiSerio.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE66F4D4B6643A4A1478BFA /* NishiSerio.png */; };
+		1119B50C8D81427E9D650500 /* NishiTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E3C264BC576403C9761B4F0 /* NishiTraje.png */; };
+		11CF7B4FBED84E5DB4009DB7 /* Perro.png in Resources */ = {isa = PBXBuildFile; fileRef = 991C0E4E081547D0B4A5F6A3 /* Perro.png */; };
+		0C6E0E2D7D57489589C4D952 /* Sadayo.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5CD0E205BA45BC957A615E /* Sadayo.png */; };
+		557A2BBCC6484A1C8AECC57E /* SadayoTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = B4D432309D664998B56030AC /* SadayoTraje.png */; };
+		952DF57C96A34F2E95D0836B /* TanakaAtaque.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FC8B419A4004B18B2A2C39F /* TanakaAtaque.png */; };
+		6C5407E83F0149AEBCDED0D7 /* TanakaFeliz.png in Resources */ = {isa = PBXBuildFile; fileRef = C67E9C0B190E499D94015E8D /* TanakaFeliz.png */; };
+		395A43B53D94463D8459241F /* TanakaFurioso.png in Resources */ = {isa = PBXBuildFile; fileRef = DE4071ED75A841798AEEEC30 /* TanakaFurioso.png */; };
+		FEAC0133DAFA42A9A77F6E7B /* TanakaSinTraje.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B9973E5DE04C028F608839 /* TanakaSinTraje.png */; };
+		6A736AB618534D40885C3E28 /* censura.png in Resources */ = {isa = PBXBuildFile; fileRef = DE426445DE364299BECA4972 /* censura.png */; };
+		747F17D0B45B43F991271AD7 /* EfectoArma1.png in Resources */ = {isa = PBXBuildFile; fileRef = 60F6E24B93594427ACC7142A /* EfectoArma1.png */; };
+		E7E39D5C0F7B4765BE4ED049 /* EfectoArma2.png in Resources */ = {isa = PBXBuildFile; fileRef = AF187F4CF4B9438085EE38D7 /* EfectoArma2.png */; };
+		A824DFCB151249869A1001E7 /* TanakasAtaqueFrame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 83535ECC268A475291671BA9 /* TanakasAtaqueFrame1.png */; };
+		5B27FCD686E84B929457ADAE /* TanakasAtaqueFrame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F2B329A1E42420FBC562FC4 /* TanakasAtaqueFrame2.png */; };
+		C97A2EA7063F4B53894934A7 /* FondoInicio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 116338BBEF8D4351A0FB53EE /* FondoInicio.jpg */; };
+		AD56C392D631479EBCAC4D2C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D461689A63A4D5282376E39 /* logo.png */; };
+		AF8DDB5E831D47C6852D8230 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = A52325B04A3B4D958F585F58 /* logo1.png */; };
+		94E8E3052ABC4BC09DD6BEF0 /* Portada.png in Resources */ = {isa = PBXBuildFile; fileRef = B69804B793D44EB39154315E /* Portada.png */; };
+		549138F95D7F45D091D421CB /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B23DE795BD774DE69A4F3427 /* splash.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = GantzNexusVR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* GantzNexusVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GantzNexusVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* GantzNexusVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GantzNexusVRTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* GantzNexusVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GantzNexusVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GantzNexusVR/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = GantzNexusVR/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GantzNexusVR/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GantzNexusVR/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GantzNexusVR/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-GantzNexusVR-GantzNexusVRTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GantzNexusVR-GantzNexusVRTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-GantzNexusVR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GantzNexusVR.debug.xcconfig"; path = "Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-GantzNexusVR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GantzNexusVR.release.xcconfig"; path = "Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-GantzNexusVR-GantzNexusVRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GantzNexusVR-GantzNexusVRTests.debug.xcconfig"; path = "Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-GantzNexusVR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GantzNexusVR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GantzNexusVR/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-GantzNexusVR-GantzNexusVRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GantzNexusVR-GantzNexusVRTests.release.xcconfig"; path = "Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0C78889233FB41ECA25E24DF /* 7LED.ttf */ = {isa = PBXFileReference; name = "7LED.ttf"; path = "../assets/fonts/7LED.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2EAFA93311ED4E0C92B3EF2F /* digital-7.ttf */ = {isa = PBXFileReference; name = "digital-7.ttf"; path = "../assets/fonts/digital-7.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6BE0557D418B4050B97F7693 /* Full-Pack.ttf */ = {isa = PBXFileReference; name = "Full-Pack.ttf"; path = "../assets/fonts/Full-Pack.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BA04297145354EF0AC861AC1 /* gantz.ttf */ = {isa = PBXFileReference; name = "gantz.ttf"; path = "../assets/fonts/gantz.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		60C0AD4F619440EBA41C69C2 /* Genjiro.ttf */ = {isa = PBXFileReference; name = "Genjiro.ttf"; path = "../assets/fonts/Genjiro.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		45D19B2978D944F9A1629594 /* Harukaze.ttf */ = {isa = PBXFileReference; name = "Harukaze.ttf"; path = "../assets/fonts/Harukaze.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5A1510239EBB44DABFA72EA5 /* JMH_Savage.ttf */ = {isa = PBXFileReference; name = "JMH_Savage.ttf"; path = "../assets/fonts/JMH_Savage.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9A8B607568484AA7804658CF /* New_Wild_Words.ttf */ = {isa = PBXFileReference; name = "New_Wild_Words.ttf"; path = "../assets/fonts/New_Wild_Words.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11549AA707AB46608434A26F /* Open24DisplaySt.ttf */ = {isa = PBXFileReference; name = "Open24DisplaySt.ttf"; path = "../assets/fonts/Open24DisplaySt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BF09EB4AEF4B47749DA0900F /* upheavtt.ttf */ = {isa = PBXFileReference; name = "upheavtt.ttf"; path = "../assets/fonts/upheavtt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		618116AFAC184A5BA7474501 /* DS-DIGIT.TTF */ = {isa = PBXFileReference; name = "DS-DIGIT.TTF"; path = "../assets/fonts/DS-DIGIT.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF03E2A49FAC475C8AB2E61A /* adaptive-icon.png */ = {isa = PBXFileReference; name = "adaptive-icon.png"; path = "../assets/adaptive-icon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F0D4832127D45A783B9653B /* favicon.png */ = {isa = PBXFileReference; name = "favicon.png"; path = "../assets/favicon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70099A2C5906462AB6F09948 /* icon.png */ = {isa = PBXFileReference; name = "icon.png"; path = "../assets/icon.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EC660994E6D94C989A570A5F /* Afuera.png */ = {isa = PBXFileReference; name = "Afuera.png"; path = "../assets/img/backgrounds/Afuera.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		93C09EBF0A244576BAE452E5 /* Afuera1.png */ = {isa = PBXFileReference; name = "Afuera1.png"; path = "../assets/img/backgrounds/Afuera1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE5AE0E5B3764755BE4660B9 /* Esfera-Abierta.png */ = {isa = PBXFileReference; name = "Esfera-Abierta.png"; path = "../assets/img/backgrounds/Esfera-Abierta.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3D3D805A390483884E0312E /* Esfera-Cerrada.png */ = {isa = PBXFileReference; name = "Esfera-Cerrada.png"; path = "../assets/img/backgrounds/Esfera-Cerrada.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59D81CF2C16947169455FE35 /* Esfera-Cerrada1.png */ = {isa = PBXFileReference; name = "Esfera-Cerrada1.png"; path = "../assets/img/backgrounds/Esfera-Cerrada1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CCE24B3D50104A80B8E0F439 /* fondo-manga-mision1.jpg */ = {isa = PBXFileReference; name = "fondo-manga-mision1.jpg"; path = "../assets/img/backgrounds/fondo-manga-mision1.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9257C6B19C604E7A836A6E5A /* FondoCalle1.png */ = {isa = PBXFileReference; name = "FondoCalle1.png"; path = "../assets/img/backgrounds/FondoCalle1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		263B3943472A48AC9E6653C0 /* HabitacionDia.png */ = {isa = PBXFileReference; name = "HabitacionDia.png"; path = "../assets/img/backgrounds/HabitacionDia.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5ED86FCE575F48E4AB5CF901 /* HabitacionNoche.png */ = {isa = PBXFileReference; name = "HabitacionNoche.png"; path = "../assets/img/backgrounds/HabitacionNoche.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B01AF1557E4043FD9441AD56 /* PuertaEsferaDerecha.png */ = {isa = PBXFileReference; name = "PuertaEsferaDerecha.png"; path = "../assets/img/backgrounds/PuertaEsferaDerecha.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66014911944B4D73A9D8E5B5 /* PuertaEsferaIzquierda.png */ = {isa = PBXFileReference; name = "PuertaEsferaIzquierda.png"; path = "../assets/img/backgrounds/PuertaEsferaIzquierda.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		69B61545A2214CB6A4A7E3DC /* ArmaAbierta.png */ = {isa = PBXFileReference; name = "ArmaAbierta.png"; path = "../assets/img/characters/ArmaAbierta.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		053D9C6DD95B49329093A77E /* Cebollin1.png */ = {isa = PBXFileReference; name = "Cebollin1.png"; path = "../assets/img/characters/Cebollin1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1776FB2A882241588467B659 /* Cebollin2.png */ = {isa = PBXFileReference; name = "Cebollin2.png"; path = "../assets/img/characters/Cebollin2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F499839EA4C04D4197C5B4EA /* CebollinEsfera.png */ = {isa = PBXFileReference; name = "CebollinEsfera.png"; path = "../assets/img/characters/CebollinEsfera.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E10820B68AC44D3BDD7A1D2 /* HojoSerio.png */ = {isa = PBXFileReference; name = "HojoSerio.png"; path = "../assets/img/characters/HojoSerio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		446486EE040C41E196B406AA /* HojoTraje.png */ = {isa = PBXFileReference; name = "HojoTraje.png"; path = "../assets/img/characters/HojoTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D0F98029FD0E402E94F074AE /* HojoUniforme.png */ = {isa = PBXFileReference; name = "HojoUniforme.png"; path = "../assets/img/characters/HojoUniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D56737E48D9440A6B670FE82 /* Jefe-Tanaka.png */ = {isa = PBXFileReference; name = "Jefe-Tanaka.png"; path = "../assets/img/characters/Jefe-Tanaka.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2535076E09DF424392B60A04 /* KatoEnojado.png */ = {isa = PBXFileReference; name = "KatoEnojado.png"; path = "../assets/img/characters/KatoEnojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2108702F792A4950B1E973C5 /* KatoFeliz.png */ = {isa = PBXFileReference; name = "KatoFeliz.png"; path = "../assets/img/characters/KatoFeliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		958956E17EEF43FDA10C4F4C /* KatoNervioso.png */ = {isa = PBXFileReference; name = "KatoNervioso.png"; path = "../assets/img/characters/KatoNervioso.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2283C3FF19BF4D70B56FD5A0 /* KatoSerio.png */ = {isa = PBXFileReference; name = "KatoSerio.png"; path = "../assets/img/characters/KatoSerio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		09F70427CEF8429191FD75BD /* KatoSorprendido.png */ = {isa = PBXFileReference; name = "KatoSorprendido.png"; path = "../assets/img/characters/KatoSorprendido.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C39C78C300004AB494A5E70A /* KatoTraje.png */ = {isa = PBXFileReference; name = "KatoTraje.png"; path = "../assets/img/characters/KatoTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		08984931B96D4287B32C1A36 /* KatoTraje1.png */ = {isa = PBXFileReference; name = "KatoTraje1.png"; path = "../assets/img/characters/KatoTraje1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CBABB1581AFB4A3E91B92D0B /* KatoTriste.png */ = {isa = PBXFileReference; name = "KatoTriste.png"; path = "../assets/img/characters/KatoTriste.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2ABB0A9310142FEA4677430 /* KatoUniforme.png */ = {isa = PBXFileReference; name = "KatoUniforme.png"; path = "../assets/img/characters/KatoUniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F0AE2771D3274AE2B2048BBB /* KatoUniforme1.png */ = {isa = PBXFileReference; name = "KatoUniforme1.png"; path = "../assets/img/characters/KatoUniforme1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26DD480A3340482DA596F70B /* Kishimoto.png */ = {isa = PBXFileReference; name = "Kishimoto.png"; path = "../assets/img/characters/Kishimoto.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A0A1630543F94ED0A9F737E2 /* KishimotoColegiala.png */ = {isa = PBXFileReference; name = "KishimotoColegiala.png"; path = "../assets/img/characters/KishimotoColegiala.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		788456B69E164E62AD0DC7EC /* KishimotoFeliz.png */ = {isa = PBXFileReference; name = "KishimotoFeliz.png"; path = "../assets/img/characters/KishimotoFeliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8CC87F397F7848368646FD0D /* KishimotoNerviosa.png */ = {isa = PBXFileReference; name = "KishimotoNerviosa.png"; path = "../assets/img/characters/KishimotoNerviosa.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		75E35DD8185C485287E08D4F /* KishimotoParpadeo1.png */ = {isa = PBXFileReference; name = "KishimotoParpadeo1.png"; path = "../assets/img/characters/KishimotoParpadeo1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		29448E3AC0A04FE8AB872BF8 /* KishimotoParpadeo2.png */ = {isa = PBXFileReference; name = "KishimotoParpadeo2.png"; path = "../assets/img/characters/KishimotoParpadeo2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		82DEFF9553354713A420EA1E /* KishimotoParpadeo3.png */ = {isa = PBXFileReference; name = "KishimotoParpadeo3.png"; path = "../assets/img/characters/KishimotoParpadeo3.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8348833BF1F42BAA9D731BB /* KishimotoSeria.png */ = {isa = PBXFileReference; name = "KishimotoSeria.png"; path = "../assets/img/characters/KishimotoSeria.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31B7D9E34A284D8A958189C8 /* KishimotoTraje.png */ = {isa = PBXFileReference; name = "KishimotoTraje.png"; path = "../assets/img/characters/KishimotoTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1F1CF11E83AC4E9F8E124092 /* KishimotoTriste.png */ = {isa = PBXFileReference; name = "KishimotoTriste.png"; path = "../assets/img/characters/KishimotoTriste.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B9001A3E309B4FD5A11C0EA4 /* KishimotoUniforme.png */ = {isa = PBXFileReference; name = "KishimotoUniforme.png"; path = "../assets/img/characters/KishimotoUniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4EADE2DE4C534DFFA1C8F00C /* kuronoaermadisparo.png */ = {isa = PBXFileReference; name = "kuronoaermadisparo.png"; path = "../assets/img/characters/kuronoaermadisparo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5909626FDA7849B684BE7D8C /* KuronoCamisa.png */ = {isa = PBXFileReference; name = "KuronoCamisa.png"; path = "../assets/img/characters/KuronoCamisa.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0C15EA81E25E46989C7881E8 /* KuronoCamisaEnojado.png */ = {isa = PBXFileReference; name = "KuronoCamisaEnojado.png"; path = "../assets/img/characters/KuronoCamisaEnojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DC5F67741C1646C3A268AE0F /* KuronoFeliz.png */ = {isa = PBXFileReference; name = "KuronoFeliz.png"; path = "../assets/img/characters/KuronoFeliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5192EC4BAA50408E91A7F8D3 /* KuronoNervioso.png */ = {isa = PBXFileReference; name = "KuronoNervioso.png"; path = "../assets/img/characters/KuronoNervioso.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		845CA16A21F7466F94CD876A /* KuronoPoleron.png */ = {isa = PBXFileReference; name = "KuronoPoleron.png"; path = "../assets/img/characters/KuronoPoleron.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70F948A986A240EE9A4D41BB /* KuronoPoleronAtaque.png */ = {isa = PBXFileReference; name = "KuronoPoleronAtaque.png"; path = "../assets/img/characters/KuronoPoleronAtaque.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C2E74F2E9D454583991955C1 /* KuronoPoleronAtaque1.png */ = {isa = PBXFileReference; name = "KuronoPoleronAtaque1.png"; path = "../assets/img/characters/KuronoPoleronAtaque1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA78546109DF4A9A80B53DB4 /* KuronoPoleronAtaque2.png */ = {isa = PBXFileReference; name = "KuronoPoleronAtaque2.png"; path = "../assets/img/characters/KuronoPoleronAtaque2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2E85D1CB510C40B0AE656BFC /* KuronoPoleronEnojado.png */ = {isa = PBXFileReference; name = "KuronoPoleronEnojado.png"; path = "../assets/img/characters/KuronoPoleronEnojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		427FD254EE6648ED9F0110F0 /* KuronoSerio.png */ = {isa = PBXFileReference; name = "KuronoSerio.png"; path = "../assets/img/characters/KuronoSerio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2C95AF17F7CD498DBF9BA2D8 /* kuronoshot.png */ = {isa = PBXFileReference; name = "kuronoshot.png"; path = "../assets/img/characters/kuronoshot.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6EE55B5B98664B2E9587D4E3 /* KuronoSonriendo.png */ = {isa = PBXFileReference; name = "KuronoSonriendo.png"; path = "../assets/img/characters/KuronoSonriendo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		66FF0F02DDAD4354907611F7 /* KuronoSorprendido.png */ = {isa = PBXFileReference; name = "KuronoSorprendido.png"; path = "../assets/img/characters/KuronoSorprendido.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1DFD7CA3882D4EBB8546D2EA /* KuronoTraje.png */ = {isa = PBXFileReference; name = "KuronoTraje.png"; path = "../assets/img/characters/KuronoTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		67130E9231A142978425E524 /* KuronoTrajeEnojado.png */ = {isa = PBXFileReference; name = "KuronoTrajeEnojado.png"; path = "../assets/img/characters/KuronoTrajeEnojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6E0A3C3D6E6E4AFEA42E633E /* KuronoTriste.png */ = {isa = PBXFileReference; name = "KuronoTriste.png"; path = "../assets/img/characters/KuronoTriste.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA818749C3534165BD590AD8 /* KuronoUniforme.png */ = {isa = PBXFileReference; name = "KuronoUniforme.png"; path = "../assets/img/characters/KuronoUniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D94B9DF5F0D449B6B7F37A13 /* KuronoUniformeEnojado.png */ = {isa = PBXFileReference; name = "KuronoUniformeEnojado.png"; path = "../assets/img/characters/KuronoUniformeEnojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F4457FF20CB4C289AD88068 /* MenuConfiguraciones.png */ = {isa = PBXFileReference; name = "MenuConfiguraciones.png"; path = "../assets/img/characters/MenuConfiguraciones.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C893136AE0A4F599754D27D /* MisterCebollense.png */ = {isa = PBXFileReference; name = "MisterCebollense.png"; path = "../assets/img/characters/MisterCebollense.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77336B718EDA4CE682A803E9 /* NishiEnojado.png */ = {isa = PBXFileReference; name = "NishiEnojado.png"; path = "../assets/img/characters/NishiEnojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7FE66F4D4B6643A4A1478BFA /* NishiSerio.png */ = {isa = PBXFileReference; name = "NishiSerio.png"; path = "../assets/img/characters/NishiSerio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E3C264BC576403C9761B4F0 /* NishiTraje.png */ = {isa = PBXFileReference; name = "NishiTraje.png"; path = "../assets/img/characters/NishiTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		991C0E4E081547D0B4A5F6A3 /* Perro.png */ = {isa = PBXFileReference; name = "Perro.png"; path = "../assets/img/characters/Perro.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CE5CD0E205BA45BC957A615E /* Sadayo.png */ = {isa = PBXFileReference; name = "Sadayo.png"; path = "../assets/img/characters/Sadayo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B4D432309D664998B56030AC /* SadayoTraje.png */ = {isa = PBXFileReference; name = "SadayoTraje.png"; path = "../assets/img/characters/SadayoTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1FC8B419A4004B18B2A2C39F /* TanakaAtaque.png */ = {isa = PBXFileReference; name = "TanakaAtaque.png"; path = "../assets/img/characters/TanakaAtaque.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C67E9C0B190E499D94015E8D /* TanakaFeliz.png */ = {isa = PBXFileReference; name = "TanakaFeliz.png"; path = "../assets/img/characters/TanakaFeliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE4071ED75A841798AEEEC30 /* TanakaFurioso.png */ = {isa = PBXFileReference; name = "TanakaFurioso.png"; path = "../assets/img/characters/TanakaFurioso.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		47B9973E5DE04C028F608839 /* TanakaSinTraje.png */ = {isa = PBXFileReference; name = "TanakaSinTraje.png"; path = "../assets/img/characters/TanakaSinTraje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE426445DE364299BECA4972 /* censura.png */ = {isa = PBXFileReference; name = "censura.png"; path = "../assets/img/effects/censura.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		60F6E24B93594427ACC7142A /* EfectoArma1.png */ = {isa = PBXFileReference; name = "EfectoArma1.png"; path = "../assets/img/effects/EfectoArma1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF187F4CF4B9438085EE38D7 /* EfectoArma2.png */ = {isa = PBXFileReference; name = "EfectoArma2.png"; path = "../assets/img/effects/EfectoArma2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83535ECC268A475291671BA9 /* TanakasAtaqueFrame1.png */ = {isa = PBXFileReference; name = "TanakasAtaqueFrame1.png"; path = "../assets/img/effects/TanakasAtaqueFrame1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F2B329A1E42420FBC562FC4 /* TanakasAtaqueFrame2.png */ = {isa = PBXFileReference; name = "TanakasAtaqueFrame2.png"; path = "../assets/img/effects/TanakasAtaqueFrame2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		116338BBEF8D4351A0FB53EE /* FondoInicio.jpg */ = {isa = PBXFileReference; name = "FondoInicio.jpg"; path = "../assets/img/FondoInicio.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D461689A63A4D5282376E39 /* logo.png */ = {isa = PBXFileReference; name = "logo.png"; path = "../assets/img/logo/logo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A52325B04A3B4D958F585F58 /* logo1.png */ = {isa = PBXFileReference; name = "logo1.png"; path = "../assets/img/logo/logo1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B69804B793D44EB39154315E /* Portada.png */ = {isa = PBXFileReference; name = "Portada.png"; path = "../assets/img/Portada.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B23DE795BD774DE69A4F3427 /* splash.png */ = {isa = PBXFileReference; name = "splash.png"; path = "../assets/splash.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-GantzNexusVR-GantzNexusVRTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-GantzNexusVR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* GantzNexusVRTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* GantzNexusVRTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = GantzNexusVRTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* GantzNexusVR */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = GantzNexusVR;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-GantzNexusVR.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-GantzNexusVR-GantzNexusVRTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* GantzNexusVR */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* GantzNexusVRTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				256360710764479EBBC5B9C1 /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* GantzNexusVR.app */,
+				00E356EE1AD99517003FC87E /* GantzNexusVRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-GantzNexusVR.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-GantzNexusVR.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-GantzNexusVR-GantzNexusVRTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-GantzNexusVR-GantzNexusVRTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		256360710764479EBBC5B9C1 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				0C78889233FB41ECA25E24DF /* 7LED.ttf */,
+				2EAFA93311ED4E0C92B3EF2F /* digital-7.ttf */,
+				6BE0557D418B4050B97F7693 /* Full-Pack.ttf */,
+				BA04297145354EF0AC861AC1 /* gantz.ttf */,
+				60C0AD4F619440EBA41C69C2 /* Genjiro.ttf */,
+				45D19B2978D944F9A1629594 /* Harukaze.ttf */,
+				5A1510239EBB44DABFA72EA5 /* JMH_Savage.ttf */,
+				9A8B607568484AA7804658CF /* New_Wild_Words.ttf */,
+				11549AA707AB46608434A26F /* Open24DisplaySt.ttf */,
+				BF09EB4AEF4B47749DA0900F /* upheavtt.ttf */,
+				618116AFAC184A5BA7474501 /* DS-DIGIT.TTF */,
+				EF03E2A49FAC475C8AB2E61A /* adaptive-icon.png */,
+				6F0D4832127D45A783B9653B /* favicon.png */,
+				70099A2C5906462AB6F09948 /* icon.png */,
+				EC660994E6D94C989A570A5F /* Afuera.png */,
+				93C09EBF0A244576BAE452E5 /* Afuera1.png */,
+				DE5AE0E5B3764755BE4660B9 /* Esfera-Abierta.png */,
+				F3D3D805A390483884E0312E /* Esfera-Cerrada.png */,
+				59D81CF2C16947169455FE35 /* Esfera-Cerrada1.png */,
+				CCE24B3D50104A80B8E0F439 /* fondo-manga-mision1.jpg */,
+				9257C6B19C604E7A836A6E5A /* FondoCalle1.png */,
+				263B3943472A48AC9E6653C0 /* HabitacionDia.png */,
+				5ED86FCE575F48E4AB5CF901 /* HabitacionNoche.png */,
+				B01AF1557E4043FD9441AD56 /* PuertaEsferaDerecha.png */,
+				66014911944B4D73A9D8E5B5 /* PuertaEsferaIzquierda.png */,
+				69B61545A2214CB6A4A7E3DC /* ArmaAbierta.png */,
+				053D9C6DD95B49329093A77E /* Cebollin1.png */,
+				1776FB2A882241588467B659 /* Cebollin2.png */,
+				F499839EA4C04D4197C5B4EA /* CebollinEsfera.png */,
+				0E10820B68AC44D3BDD7A1D2 /* HojoSerio.png */,
+				446486EE040C41E196B406AA /* HojoTraje.png */,
+				D0F98029FD0E402E94F074AE /* HojoUniforme.png */,
+				D56737E48D9440A6B670FE82 /* Jefe-Tanaka.png */,
+				2535076E09DF424392B60A04 /* KatoEnojado.png */,
+				2108702F792A4950B1E973C5 /* KatoFeliz.png */,
+				958956E17EEF43FDA10C4F4C /* KatoNervioso.png */,
+				2283C3FF19BF4D70B56FD5A0 /* KatoSerio.png */,
+				09F70427CEF8429191FD75BD /* KatoSorprendido.png */,
+				C39C78C300004AB494A5E70A /* KatoTraje.png */,
+				08984931B96D4287B32C1A36 /* KatoTraje1.png */,
+				CBABB1581AFB4A3E91B92D0B /* KatoTriste.png */,
+				E2ABB0A9310142FEA4677430 /* KatoUniforme.png */,
+				F0AE2771D3274AE2B2048BBB /* KatoUniforme1.png */,
+				26DD480A3340482DA596F70B /* Kishimoto.png */,
+				A0A1630543F94ED0A9F737E2 /* KishimotoColegiala.png */,
+				788456B69E164E62AD0DC7EC /* KishimotoFeliz.png */,
+				8CC87F397F7848368646FD0D /* KishimotoNerviosa.png */,
+				75E35DD8185C485287E08D4F /* KishimotoParpadeo1.png */,
+				29448E3AC0A04FE8AB872BF8 /* KishimotoParpadeo2.png */,
+				82DEFF9553354713A420EA1E /* KishimotoParpadeo3.png */,
+				F8348833BF1F42BAA9D731BB /* KishimotoSeria.png */,
+				31B7D9E34A284D8A958189C8 /* KishimotoTraje.png */,
+				1F1CF11E83AC4E9F8E124092 /* KishimotoTriste.png */,
+				B9001A3E309B4FD5A11C0EA4 /* KishimotoUniforme.png */,
+				4EADE2DE4C534DFFA1C8F00C /* kuronoaermadisparo.png */,
+				5909626FDA7849B684BE7D8C /* KuronoCamisa.png */,
+				0C15EA81E25E46989C7881E8 /* KuronoCamisaEnojado.png */,
+				DC5F67741C1646C3A268AE0F /* KuronoFeliz.png */,
+				5192EC4BAA50408E91A7F8D3 /* KuronoNervioso.png */,
+				845CA16A21F7466F94CD876A /* KuronoPoleron.png */,
+				70F948A986A240EE9A4D41BB /* KuronoPoleronAtaque.png */,
+				C2E74F2E9D454583991955C1 /* KuronoPoleronAtaque1.png */,
+				EA78546109DF4A9A80B53DB4 /* KuronoPoleronAtaque2.png */,
+				2E85D1CB510C40B0AE656BFC /* KuronoPoleronEnojado.png */,
+				427FD254EE6648ED9F0110F0 /* KuronoSerio.png */,
+				2C95AF17F7CD498DBF9BA2D8 /* kuronoshot.png */,
+				6EE55B5B98664B2E9587D4E3 /* KuronoSonriendo.png */,
+				66FF0F02DDAD4354907611F7 /* KuronoSorprendido.png */,
+				1DFD7CA3882D4EBB8546D2EA /* KuronoTraje.png */,
+				67130E9231A142978425E524 /* KuronoTrajeEnojado.png */,
+				6E0A3C3D6E6E4AFEA42E633E /* KuronoTriste.png */,
+				CA818749C3534165BD590AD8 /* KuronoUniforme.png */,
+				D94B9DF5F0D449B6B7F37A13 /* KuronoUniformeEnojado.png */,
+				6F4457FF20CB4C289AD88068 /* MenuConfiguraciones.png */,
+				1C893136AE0A4F599754D27D /* MisterCebollense.png */,
+				77336B718EDA4CE682A803E9 /* NishiEnojado.png */,
+				7FE66F4D4B6643A4A1478BFA /* NishiSerio.png */,
+				0E3C264BC576403C9761B4F0 /* NishiTraje.png */,
+				991C0E4E081547D0B4A5F6A3 /* Perro.png */,
+				CE5CD0E205BA45BC957A615E /* Sadayo.png */,
+				B4D432309D664998B56030AC /* SadayoTraje.png */,
+				1FC8B419A4004B18B2A2C39F /* TanakaAtaque.png */,
+				C67E9C0B190E499D94015E8D /* TanakaFeliz.png */,
+				DE4071ED75A841798AEEEC30 /* TanakaFurioso.png */,
+				47B9973E5DE04C028F608839 /* TanakaSinTraje.png */,
+				DE426445DE364299BECA4972 /* censura.png */,
+				60F6E24B93594427ACC7142A /* EfectoArma1.png */,
+				AF187F4CF4B9438085EE38D7 /* EfectoArma2.png */,
+				83535ECC268A475291671BA9 /* TanakasAtaqueFrame1.png */,
+				8F2B329A1E42420FBC562FC4 /* TanakasAtaqueFrame2.png */,
+				116338BBEF8D4351A0FB53EE /* FondoInicio.jpg */,
+				0D461689A63A4D5282376E39 /* logo.png */,
+				A52325B04A3B4D958F585F58 /* logo1.png */,
+				B69804B793D44EB39154315E /* Portada.png */,
+				B23DE795BD774DE69A4F3427 /* splash.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* GantzNexusVRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GantzNexusVRTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = GantzNexusVRTests;
+			productName = GantzNexusVRTests;
+			productReference = 00E356EE1AD99517003FC87E /* GantzNexusVRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* GantzNexusVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GantzNexusVR" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GantzNexusVR;
+			productName = GantzNexusVR;
+			productReference = 13B07F961A680F5B00A75B9A /* GantzNexusVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "GantzNexusVR" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* GantzNexusVR */,
+				00E356ED1AD99517003FC87E /* GantzNexusVRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				495EC0FBCAAB493DBB4E9D30 /* 7LED.ttf in Resources */,
+				415D1A70B17A4A3F92C856C9 /* digital-7.ttf in Resources */,
+				04E39810FCF7461FA077B186 /* Full-Pack.ttf in Resources */,
+				A4E497FBF44B4DF989567B13 /* gantz.ttf in Resources */,
+				453079BE5F6A475384BC59D3 /* Genjiro.ttf in Resources */,
+				393DF218F7124142B8C0B05F /* Harukaze.ttf in Resources */,
+				9DF3336E22C345E1A6203AE4 /* JMH_Savage.ttf in Resources */,
+				1A12D78A49DA4857A5D6A2FB /* New_Wild_Words.ttf in Resources */,
+				1C01A6CD4D614817A3069A28 /* Open24DisplaySt.ttf in Resources */,
+				0BEC58A2B7C948118A00E9FB /* upheavtt.ttf in Resources */,
+				10ED2C0BE694437DA81E853B /* DS-DIGIT.TTF in Resources */,
+				F5B2D1F04BE241E8B38CD0CA /* adaptive-icon.png in Resources */,
+				5F2C4B6930EC4292B36CDBD1 /* favicon.png in Resources */,
+				10BA9E462EDF4861AD4F41BF /* icon.png in Resources */,
+				AE2ACB82B1104948B218B40F /* Afuera.png in Resources */,
+				4E9A8A2AFFE9494DB33D1D68 /* Afuera1.png in Resources */,
+				4E72814BEBCE487C96C9AEF6 /* Esfera-Abierta.png in Resources */,
+				17D34BBB6590477EBB497C18 /* Esfera-Cerrada.png in Resources */,
+				EBD1B1E3E2D3407EAAC274FD /* Esfera-Cerrada1.png in Resources */,
+				4737DC56C98B496BA2DD65D2 /* fondo-manga-mision1.jpg in Resources */,
+				026370A4915E4F7DBB4C2068 /* FondoCalle1.png in Resources */,
+				02CF15DB461043458578122D /* HabitacionDia.png in Resources */,
+				497D454D4495480DB3BBE644 /* HabitacionNoche.png in Resources */,
+				1DC488CA85E14B069A049868 /* PuertaEsferaDerecha.png in Resources */,
+				68214B78708549C19BD8079F /* PuertaEsferaIzquierda.png in Resources */,
+				0F06A203AA2D4585AB9A6CB6 /* ArmaAbierta.png in Resources */,
+				55B833693B964039B412D353 /* Cebollin1.png in Resources */,
+				956CDFBA22CA4F6B9AB57CDA /* Cebollin2.png in Resources */,
+				3E829ECBA89D437CA10F9899 /* CebollinEsfera.png in Resources */,
+				FA4E52D5844F40BB80EB57CB /* HojoSerio.png in Resources */,
+				3E09CCF68D854AC9A86276BA /* HojoTraje.png in Resources */,
+				7A9B9EBC1C2C48938148CCCE /* HojoUniforme.png in Resources */,
+				E951B536041C4259961B8E34 /* Jefe-Tanaka.png in Resources */,
+				CBAA1A880A7E4FB98BFB62B5 /* KatoEnojado.png in Resources */,
+				550B32092A234BE69E28AC90 /* KatoFeliz.png in Resources */,
+				CEFF4A96B2374BECBDB5C059 /* KatoNervioso.png in Resources */,
+				24AB0257B897470386ACF191 /* KatoSerio.png in Resources */,
+				8ACD8FF49E3A4BAAA53DBC5E /* KatoSorprendido.png in Resources */,
+				9AD686AB53BC42F7A8671C14 /* KatoTraje.png in Resources */,
+				EF7F703CA90C444FA35F8FDC /* KatoTraje1.png in Resources */,
+				8049752730F34CFE8D59B07B /* KatoTriste.png in Resources */,
+				A4C13418C3B940CDB7E31A99 /* KatoUniforme.png in Resources */,
+				96AEFD260F594CF4B9E66B83 /* KatoUniforme1.png in Resources */,
+				7086CD08C9814457A671999E /* Kishimoto.png in Resources */,
+				12F74B7A48D64CA9A8AFE0B9 /* KishimotoColegiala.png in Resources */,
+				81651E0D582C49EC997E4A77 /* KishimotoFeliz.png in Resources */,
+				764B7A02277D4CF3BD528DAC /* KishimotoNerviosa.png in Resources */,
+				FBD6692787684C21A4766860 /* KishimotoParpadeo1.png in Resources */,
+				35120E172F954C1F99C38237 /* KishimotoParpadeo2.png in Resources */,
+				5504EF429ECB4C8BB3C1DC12 /* KishimotoParpadeo3.png in Resources */,
+				F3B76382C8D04F1D9CBCE44B /* KishimotoSeria.png in Resources */,
+				D89201C2C0A64C418FB0F744 /* KishimotoTraje.png in Resources */,
+				5782CED93C134195AE4EF8F1 /* KishimotoTriste.png in Resources */,
+				CA78A4E2ADC0439C9F88033F /* KishimotoUniforme.png in Resources */,
+				B21BD0EEC6454E73A8CD8249 /* kuronoaermadisparo.png in Resources */,
+				7210E6696D5C4BBA9DE86DEB /* KuronoCamisa.png in Resources */,
+				91D99BD784404EC1B0BB4F46 /* KuronoCamisaEnojado.png in Resources */,
+				023C7FEA880A4F4F9836E7CF /* KuronoFeliz.png in Resources */,
+				84A79EC4E94A4BDDB837899E /* KuronoNervioso.png in Resources */,
+				F5EDC813022F4767B0DB7259 /* KuronoPoleron.png in Resources */,
+				8633612A5952492792E97042 /* KuronoPoleronAtaque.png in Resources */,
+				0B2DCE9B5ECE4BDEAB50E173 /* KuronoPoleronAtaque1.png in Resources */,
+				49B40960C27845C2BCE9061A /* KuronoPoleronAtaque2.png in Resources */,
+				D63A2D2043424A06B9C0F439 /* KuronoPoleronEnojado.png in Resources */,
+				C767FF265F5B43C781B4EFC0 /* KuronoSerio.png in Resources */,
+				CEC52770F6EA4637B59BD45E /* kuronoshot.png in Resources */,
+				83C6F6E469BB4C4195307ED5 /* KuronoSonriendo.png in Resources */,
+				2B4A8372AA994442B72B548D /* KuronoSorprendido.png in Resources */,
+				27AEC877A7E34076A8C111BA /* KuronoTraje.png in Resources */,
+				5F8C58F37DF542CD90ABB40D /* KuronoTrajeEnojado.png in Resources */,
+				D03A0B5BEA0F4E0D80B78BF6 /* KuronoTriste.png in Resources */,
+				82AD7A26B9A8438F80356ACF /* KuronoUniforme.png in Resources */,
+				7A48CA72098842A6A50C8BBB /* KuronoUniformeEnojado.png in Resources */,
+				00F44414FA0E4DF38BF5BD3B /* MenuConfiguraciones.png in Resources */,
+				D639687A36C948528E250FD0 /* MisterCebollense.png in Resources */,
+				7732E58EB5E143B4925EE26A /* NishiEnojado.png in Resources */,
+				AD92686E92B747919D70FDD5 /* NishiSerio.png in Resources */,
+				1119B50C8D81427E9D650500 /* NishiTraje.png in Resources */,
+				11CF7B4FBED84E5DB4009DB7 /* Perro.png in Resources */,
+				0C6E0E2D7D57489589C4D952 /* Sadayo.png in Resources */,
+				557A2BBCC6484A1C8AECC57E /* SadayoTraje.png in Resources */,
+				952DF57C96A34F2E95D0836B /* TanakaAtaque.png in Resources */,
+				6C5407E83F0149AEBCDED0D7 /* TanakaFeliz.png in Resources */,
+				395A43B53D94463D8459241F /* TanakaFurioso.png in Resources */,
+				FEAC0133DAFA42A9A77F6E7B /* TanakaSinTraje.png in Resources */,
+				6A736AB618534D40885C3E28 /* censura.png in Resources */,
+				747F17D0B45B43F991271AD7 /* EfectoArma1.png in Resources */,
+				E7E39D5C0F7B4765BE4ED049 /* EfectoArma2.png in Resources */,
+				A824DFCB151249869A1001E7 /* TanakasAtaqueFrame1.png in Resources */,
+				5B27FCD686E84B929457ADAE /* TanakasAtaqueFrame2.png in Resources */,
+				C97A2EA7063F4B53894934A7 /* FondoInicio.jpg in Resources */,
+				AD56C392D631479EBCAC4D2C /* logo.png in Resources */,
+				AF8DDB5E831D47C6852D8230 /* logo1.png in Resources */,
+				94E8E3052ABC4BC09DD6BEF0 /* Portada.png in Resources */,
+				549138F95D7F45D091D421CB /* splash.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GantzNexusVR-GantzNexusVRTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GantzNexusVR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR/Pods-GantzNexusVR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GantzNexusVR-GantzNexusVRTests/Pods-GantzNexusVR-GantzNexusVRTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* GantzNexusVRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* GantzNexusVR */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-GantzNexusVR-GantzNexusVRTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GantzNexusVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GantzNexusVR.app/GantzNexusVR";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-GantzNexusVR-GantzNexusVRTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = GantzNexusVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GantzNexusVR.app/GantzNexusVR";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-GantzNexusVR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = GantzNexusVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GantzNexusVR;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-GantzNexusVR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = GantzNexusVR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = GantzNexusVR;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "GantzNexusVRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GantzNexusVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "GantzNexusVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

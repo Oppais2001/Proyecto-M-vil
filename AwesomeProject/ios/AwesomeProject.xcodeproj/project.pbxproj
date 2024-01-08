@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* AwesomeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AwesomeProjectTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-AwesomeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeProject.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		7699B88040F8A987B510C191 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AC49B55228D9448AB7379B41 /* 7LED.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2494A12B8AE545B99AF9D09B /* 7LED.ttf */; };
+		FEE117B0F7FC424190C90F50 /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E925C48D170D486190E94B0A /* digital-7.ttf */; };
+		599B697ADE90415CBE34973B /* Full-Pack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 504FC431811944C29A0957E6 /* Full-Pack.ttf */; };
+		9531A0F1313A456BB13689C1 /* gantz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9735DA0CD0224F3981C1423C /* gantz.ttf */; };
+		771F6F1BCE104755A942086D /* Genjiro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1B7B14DBBC24821BFF1437A /* Genjiro.ttf */; };
+		8B3B1745BBB64721896825A4 /* Harukaze.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A142DEC21D8D410D99CCA8B8 /* Harukaze.ttf */; };
+		1B9EA2735CA64319A942346F /* JMH_Savage.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4066AE429DC241CB9B82FB1D /* JMH_Savage.ttf */; };
+		439B25E521644933849F20F9 /* New_Wild_Words.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F1BC3C31DA44AC581623D01 /* New_Wild_Words.ttf */; };
+		FE246A3292724B7399711301 /* Open24DisplaySt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B530F5DA215488495C21381 /* Open24DisplaySt.ttf */; };
+		F6C4F041B1CC491B9C684B19 /* upheavtt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72F8B990A9414A328288F97C /* upheavtt.ttf */; };
+		3CA84CCF14004774A6FEE77F /* DS-DIGIT.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 570FAF8BAB72461B87C38920 /* DS-DIGIT.TTF */; };
+		8973ADB44FEE47649BCC62C0 /* Assets.js in Resources */ = {isa = PBXBuildFile; fileRef = A3A72AC5027140128709DADC /* Assets.js */; };
+		A1994003C3B1451B83057C55 /* afuera.png in Resources */ = {isa = PBXBuildFile; fileRef = CB084E52C61143F8ADAFDB73 /* afuera.png */; };
+		1C5616A9B96E426A9128F2F3 /* afuera1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A18CE44854C4DDE89E06EE9 /* afuera1.png */; };
+		61E9F3DCF72E451A8AA618D7 /* esfera_abierta.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE68635F1514E0CBA56886C /* esfera_abierta.png */; };
+		28F40932BFBE4D17A72F80B2 /* esfera_cerrada.png in Resources */ = {isa = PBXBuildFile; fileRef = 239A2C6014014B268A2F95B5 /* esfera_cerrada.png */; };
+		1721B3D790214BABAC0772E1 /* esfera_cerrada1.png in Resources */ = {isa = PBXBuildFile; fileRef = B60E50F0C98143E2A95CA433 /* esfera_cerrada1.png */; };
+		DB57CD535FAC4C779A685AA1 /* fondo_calle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 81FD515605CE4D6291D4414F /* fondo_calle1.png */; };
+		F995C5D1142F4CFD9F292F98 /* habitacion_dia.png in Resources */ = {isa = PBXBuildFile; fileRef = C50B08EC27DC42209C7D804A /* habitacion_dia.png */; };
+		79CE8A04C6AC4CA6AF1D9C30 /* habitacion_noche.png in Resources */ = {isa = PBXBuildFile; fileRef = D05E32480CC34A92A587FC8D /* habitacion_noche.png */; };
+		899D50756230495E9CD489A9 /* puerta_esfera_derecha.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E835A6D546C4937B73C5EE3 /* puerta_esfera_derecha.png */; };
+		D2927CE956D74FB29B05F698 /* puerta_esfera_izquierda.png in Resources */ = {isa = PBXBuildFile; fileRef = E60F9CB2C87F48C7958840A8 /* puerta_esfera_izquierda.png */; };
+		A962B8694EB94BA898B9A5A4 /* arma_abierta.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2348B447704324B80AC696 /* arma_abierta.png */; };
+		97E74C43E4954E738509CDC9 /* cebollin1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6B9150407D4579A793270A /* cebollin1.png */; };
+		0B3082ED3B3C4C0B95F4E13C /* cebollin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 371CD8903CA4466E9362DCD2 /* cebollin2.png */; };
+		B54DE01F9EE24EFAB5A313E6 /* cebollin_esfera.png in Resources */ = {isa = PBXBuildFile; fileRef = CAD48EE475E64BECBF1B6589 /* cebollin_esfera.png */; };
+		10AEECEC730C43E38EB7009A /* hojo_serio.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E21C3AC80E4DA5A5E600D1 /* hojo_serio.png */; };
+		326F8817C5B648DB9E4C466E /* hojo_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD2FCC00AAD444C946648B5 /* hojo_traje.png */; };
+		A3302C563A474F189397BFDB /* hojo_uniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F2A4CA52604C81B2E95A50 /* hojo_uniforme.png */; };
+		5FA42A7F9837470E9DF54B28 /* jefe_tanaka.png in Resources */ = {isa = PBXBuildFile; fileRef = 93BC74B215B74FA3A4DAB4B0 /* jefe_tanaka.png */; };
+		EBE3BD1311F648F2895C45BC /* kato_enojado.png in Resources */ = {isa = PBXBuildFile; fileRef = E27F9194F7C24D2E93F9380F /* kato_enojado.png */; };
+		7C2FDFA3579F4CDFA4328C47 /* kato_feliz.png in Resources */ = {isa = PBXBuildFile; fileRef = 33822971D7A542BDB3BD7CD6 /* kato_feliz.png */; };
+		D0925D7766B4439E85074F81 /* kato_nervioso.png in Resources */ = {isa = PBXBuildFile; fileRef = 859E860AEB824897B65D065A /* kato_nervioso.png */; };
+		2338C30FB5234E559A059AB2 /* kato_serio.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AEB2EEF604845949D5B1DDC /* kato_serio.png */; };
+		3E6F7B61D8744744994375C2 /* kato_sorprendido.png in Resources */ = {isa = PBXBuildFile; fileRef = F32EBBE8249240BBBE718F37 /* kato_sorprendido.png */; };
+		1B36F9226EB946EB9E60E13B /* kato_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A44408F9641486186BCFD5F /* kato_traje.png */; };
+		91F982819AD046058A5E5721 /* kato_traje1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7980C5FD8DE64241B5051D58 /* kato_traje1.png */; };
+		2A7A87988F3845D2B03E42FC /* kato_triste.png in Resources */ = {isa = PBXBuildFile; fileRef = BAF62D11A2B34810A1D37CD9 /* kato_triste.png */; };
+		087B55A074D54B3CA248A420 /* kato_uniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = 50BAA9EA35BB4505AD8E65DD /* kato_uniforme.png */; };
+		563E9F86161A4BE28F4E309D /* kato_uniforme1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2152F3ECE5224AF7B3F8D34A /* kato_uniforme1.png */; };
+		4FE8DB1EA7D14D3FAEBF232C /* kishimoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 7109F0D179DD4043B0460361 /* kishimoto.png */; };
+		A9E3969852FA47D6B7631B88 /* kishimoto_colegiala.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFB330E29F94B7F80BBDCCC /* kishimoto_colegiala.png */; };
+		F1C97D179B864F2F9DB8DC2D /* kishimoto_feliz.png in Resources */ = {isa = PBXBuildFile; fileRef = B8D35DEF4A104022BD5CF383 /* kishimoto_feliz.png */; };
+		609A1A2342314EE2986ACD40 /* kishimoto_nerviosa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CD85EBB06BF49E2AD2638EE /* kishimoto_nerviosa.png */; };
+		175AA1E325D0463F91D93140 /* kishimoto_parpadeo1.png in Resources */ = {isa = PBXBuildFile; fileRef = B84BCDFB0BBA449783F44C29 /* kishimoto_parpadeo1.png */; };
+		637F76C7B74A48E59DD7E4F1 /* kishimoto_parpadeo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3017281CB3964958940FB9D1 /* kishimoto_parpadeo2.png */; };
+		C947027B08AB42B5AF2D8F0C /* kishimoto_parpadeo3.png in Resources */ = {isa = PBXBuildFile; fileRef = AE8E3C03313C4E2783D4D678 /* kishimoto_parpadeo3.png */; };
+		7A3D0FCE7EFD47A386D3B3A2 /* kishimoto_seria.png in Resources */ = {isa = PBXBuildFile; fileRef = FD6F42C385D949A19DDD101E /* kishimoto_seria.png */; };
+		12151D71C0774AFD8C6D1795 /* kishimoto_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 097E1F1EA9964B9FB3BBAE13 /* kishimoto_traje.png */; };
+		79E701A7AE9546299993D58D /* kishimoto_triste.png in Resources */ = {isa = PBXBuildFile; fileRef = BE46B48438C54B9983FBEAE2 /* kishimoto_triste.png */; };
+		9F8BEA4EDB8448358C5D373C /* kishimoto_uniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = 53069217797A4009B6F674F2 /* kishimoto_uniforme.png */; };
+		2A326B8F4C3B410F81565AF7 /* kuronoaermadisparo.png in Resources */ = {isa = PBXBuildFile; fileRef = DE0260563310458DAF7583DE /* kuronoaermadisparo.png */; };
+		95A6EF41DFE1402C8F713D72 /* kuronoshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 20EE6F87B92A4DD183D1F536 /* kuronoshot.png */; };
+		8C10D2ADFCB04344B14696FE /* kurono_camisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7DF65C87C485483CB1641C2F /* kurono_camisa.png */; };
+		48D70B3899F44ECF805A578B /* kurono_camisa1.png in Resources */ = {isa = PBXBuildFile; fileRef = A5DA8F0E35664CC49EEDBAE2 /* kurono_camisa1.png */; };
+		BC298B92374548B592B930CC /* kurono_feliz.png in Resources */ = {isa = PBXBuildFile; fileRef = 244DA1C28CB7457486016489 /* kurono_feliz.png */; };
+		1A401E3C69CF4595AD896632 /* kurono_nervioso.png in Resources */ = {isa = PBXBuildFile; fileRef = 8478AFA8B4204131A810B67D /* kurono_nervioso.png */; };
+		486A785F8F584C949CDF5F43 /* kurono_poleron.png in Resources */ = {isa = PBXBuildFile; fileRef = C8F8582B0F7B4BD4BF8ADFDC /* kurono_poleron.png */; };
+		2ADF72D53DD1458E837C943A /* kurono_poleron1.png in Resources */ = {isa = PBXBuildFile; fileRef = 494FB3B78A5E4B9593B89E93 /* kurono_poleron1.png */; };
+		D6D15B1725984921A82688DD /* kurono_poleron_ataque.png in Resources */ = {isa = PBXBuildFile; fileRef = 775E49FA23E5450BA0DF1E90 /* kurono_poleron_ataque.png */; };
+		D92436D811CD4FCAA92BAF42 /* kurono_poleron_ataque1.png in Resources */ = {isa = PBXBuildFile; fileRef = DCF0C24C457C472DAD24CABD /* kurono_poleron_ataque1.png */; };
+		EF6FA841B7B34B83BB027561 /* kurono_poleron_ataque2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA7A745CBE34563B1C9B420 /* kurono_poleron_ataque2.png */; };
+		06938000D9114473A762FC5A /* kurono_serio.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E776649326F4922914457AB /* kurono_serio.png */; };
+		1EF430C5FFBF46D9B964879F /* kurono_sonriendo.png in Resources */ = {isa = PBXBuildFile; fileRef = 39317681894B4B638320D271 /* kurono_sonriendo.png */; };
+		2655E7CE100B4BE289CD21FC /* kurono_sorprendido.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C7FC33590D74589BE726C25 /* kurono_sorprendido.png */; };
+		19643C6B375B49A4A41A96D4 /* kurono_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 0299C28CAAEB4BD3AB36E25C /* kurono_traje.png */; };
+		A7FEBCB9AA9C4E0AB36C85B6 /* kurono_traje1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B0BCD75F0FB43CCB964289F /* kurono_traje1.png */; };
+		D9AC0706A6024D8590455CD7 /* kurono_triste.png in Resources */ = {isa = PBXBuildFile; fileRef = 14FEB0EC5B164AC4B44B67A9 /* kurono_triste.png */; };
+		605B2C7DB76644309A2509FF /* kurono_uniforme.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E3A7EC0705D4DA4AAE02524 /* kurono_uniforme.png */; };
+		676BB0566F354447A7115B06 /* kurono_uniforme1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C74D44D457348A2BDA674E3 /* kurono_uniforme1.png */; };
+		BB11EC1A24EB42A7881F0C8E /* menu_configuraciones.png in Resources */ = {isa = PBXBuildFile; fileRef = DD0A27A6A0B043BEAD2F93AC /* menu_configuraciones.png */; };
+		A02620FB6AB2453C8DC5A3AE /* mister_cebollense.png in Resources */ = {isa = PBXBuildFile; fileRef = EA006142F6564E2CB4BD20B6 /* mister_cebollense.png */; };
+		20FE45485402415D9FADF446 /* nishi_enojado.png in Resources */ = {isa = PBXBuildFile; fileRef = D2ACAC6C191946F78410D007 /* nishi_enojado.png */; };
+		C39F06BFF2E2488B80BAC4B4 /* nishi_serio.png in Resources */ = {isa = PBXBuildFile; fileRef = EF0EFD6BC17F4431B86B97EE /* nishi_serio.png */; };
+		D7AE4FBE3B6E4E4DBAF3A8F7 /* nishi_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D4610B3744C478389294D49 /* nishi_traje.png */; };
+		AFF041C01787496AADE50256 /* perro.png in Resources */ = {isa = PBXBuildFile; fileRef = B2AE9ECCDCCD4F2F8FC31AE7 /* perro.png */; };
+		0CC125498ECC44AE8002A97A /* sadayo.png in Resources */ = {isa = PBXBuildFile; fileRef = FF3742C8B3BC44E7B05A60CA /* sadayo.png */; };
+		C5FF0969F92F4702886307B4 /* sadayo_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E5E961E49044B61858576C2 /* sadayo_traje.png */; };
+		A94C3315AF124F628018C423 /* tanaka_ataque.png in Resources */ = {isa = PBXBuildFile; fileRef = 51838E45CD9B4325BCE1B2C2 /* tanaka_ataque.png */; };
+		C2BD55F775DD4F8992025B43 /* tanaka_feliz.png in Resources */ = {isa = PBXBuildFile; fileRef = A772BB070C754D058B13E035 /* tanaka_feliz.png */; };
+		A36DCBF380364E86A479131E /* tanaka_furioso.png in Resources */ = {isa = PBXBuildFile; fileRef = C129F8BAB2FA4FCE8A62866C /* tanaka_furioso.png */; };
+		A7C1507DF74F4B7282FD494F /* tanaka_sin_traje.png in Resources */ = {isa = PBXBuildFile; fileRef = 380EEEE787D5428FA2B54897 /* tanaka_sin_traje.png */; };
+		09B8FE9221F44397BFAEA7FF /* censura.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147E40B05F4DB080B3A511 /* censura.png */; };
+		E1292B4B87BE4F218C41F0A8 /* efecto_arma1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E62C5CD20A5460B9882C3E8 /* efecto_arma1.png */; };
+		AB67739C6EB24C41B2ABFCBB /* efecto_arma2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B734E33124B47C68399378E /* efecto_arma2.png */; };
+		373E6FD3878B4BE292E9D692 /* tanaka_ataque_frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F24B55D276641899909A610 /* tanaka_ataque_frame1.png */; };
+		A285A106834748E386E577C5 /* tanaka_ataque_frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6140DC14AA644BA8ACCAEB11 /* tanaka_ataque_frame2.png */; };
+		B303029269F34F84BDED03E6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 091514E87A7A4A45AC251FA5 /* logo.png */; };
+		F6D967D6B25649E98D68D0C3 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E70BE161F66463BA4CBA657 /* logo1.png */; };
+		889CD362B185463A84E54A82 /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = 52130FDB1CEB468DB4FA4E53 /* portada.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = AwesomeProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* AwesomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AwesomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* AwesomeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeProjectTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* AwesomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwesomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AwesomeProject/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AwesomeProject/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AwesomeProject/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AwesomeProject/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AwesomeProject/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject-AwesomeProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject-AwesomeProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4392A12AC88292D35C810B /* Pods-AwesomeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-AwesomeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AwesomeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2494A12B8AE545B99AF9D09B /* 7LED.ttf */ = {isa = PBXFileReference; name = "7LED.ttf"; path = "../assets/fonts/7LED.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E925C48D170D486190E94B0A /* digital-7.ttf */ = {isa = PBXFileReference; name = "digital-7.ttf"; path = "../assets/fonts/digital-7.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		504FC431811944C29A0957E6 /* Full-Pack.ttf */ = {isa = PBXFileReference; name = "Full-Pack.ttf"; path = "../assets/fonts/Full-Pack.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9735DA0CD0224F3981C1423C /* gantz.ttf */ = {isa = PBXFileReference; name = "gantz.ttf"; path = "../assets/fonts/gantz.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F1B7B14DBBC24821BFF1437A /* Genjiro.ttf */ = {isa = PBXFileReference; name = "Genjiro.ttf"; path = "../assets/fonts/Genjiro.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A142DEC21D8D410D99CCA8B8 /* Harukaze.ttf */ = {isa = PBXFileReference; name = "Harukaze.ttf"; path = "../assets/fonts/Harukaze.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4066AE429DC241CB9B82FB1D /* JMH_Savage.ttf */ = {isa = PBXFileReference; name = "JMH_Savage.ttf"; path = "../assets/fonts/JMH_Savage.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F1BC3C31DA44AC581623D01 /* New_Wild_Words.ttf */ = {isa = PBXFileReference; name = "New_Wild_Words.ttf"; path = "../assets/fonts/New_Wild_Words.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8B530F5DA215488495C21381 /* Open24DisplaySt.ttf */ = {isa = PBXFileReference; name = "Open24DisplaySt.ttf"; path = "../assets/fonts/Open24DisplaySt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72F8B990A9414A328288F97C /* upheavtt.ttf */ = {isa = PBXFileReference; name = "upheavtt.ttf"; path = "../assets/fonts/upheavtt.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		570FAF8BAB72461B87C38920 /* DS-DIGIT.TTF */ = {isa = PBXFileReference; name = "DS-DIGIT.TTF"; path = "../assets/fonts/DS-DIGIT.TTF"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A3A72AC5027140128709DADC /* Assets.js */ = {isa = PBXFileReference; name = "Assets.js"; path = "../assets/Assets.js"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB084E52C61143F8ADAFDB73 /* afuera.png */ = {isa = PBXFileReference; name = "afuera.png"; path = "../assets/img/backgrounds/afuera.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7A18CE44854C4DDE89E06EE9 /* afuera1.png */ = {isa = PBXFileReference; name = "afuera1.png"; path = "../assets/img/backgrounds/afuera1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ECE68635F1514E0CBA56886C /* esfera_abierta.png */ = {isa = PBXFileReference; name = "esfera_abierta.png"; path = "../assets/img/backgrounds/esfera_abierta.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		239A2C6014014B268A2F95B5 /* esfera_cerrada.png */ = {isa = PBXFileReference; name = "esfera_cerrada.png"; path = "../assets/img/backgrounds/esfera_cerrada.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B60E50F0C98143E2A95CA433 /* esfera_cerrada1.png */ = {isa = PBXFileReference; name = "esfera_cerrada1.png"; path = "../assets/img/backgrounds/esfera_cerrada1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		81FD515605CE4D6291D4414F /* fondo_calle1.png */ = {isa = PBXFileReference; name = "fondo_calle1.png"; path = "../assets/img/backgrounds/fondo_calle1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C50B08EC27DC42209C7D804A /* habitacion_dia.png */ = {isa = PBXFileReference; name = "habitacion_dia.png"; path = "../assets/img/backgrounds/habitacion_dia.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D05E32480CC34A92A587FC8D /* habitacion_noche.png */ = {isa = PBXFileReference; name = "habitacion_noche.png"; path = "../assets/img/backgrounds/habitacion_noche.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7E835A6D546C4937B73C5EE3 /* puerta_esfera_derecha.png */ = {isa = PBXFileReference; name = "puerta_esfera_derecha.png"; path = "../assets/img/backgrounds/puerta_esfera_derecha.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E60F9CB2C87F48C7958840A8 /* puerta_esfera_izquierda.png */ = {isa = PBXFileReference; name = "puerta_esfera_izquierda.png"; path = "../assets/img/backgrounds/puerta_esfera_izquierda.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E2348B447704324B80AC696 /* arma_abierta.png */ = {isa = PBXFileReference; name = "arma_abierta.png"; path = "../assets/img/characters/arma_abierta.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FA6B9150407D4579A793270A /* cebollin1.png */ = {isa = PBXFileReference; name = "cebollin1.png"; path = "../assets/img/characters/cebollin1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		371CD8903CA4466E9362DCD2 /* cebollin2.png */ = {isa = PBXFileReference; name = "cebollin2.png"; path = "../assets/img/characters/cebollin2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CAD48EE475E64BECBF1B6589 /* cebollin_esfera.png */ = {isa = PBXFileReference; name = "cebollin_esfera.png"; path = "../assets/img/characters/cebollin_esfera.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		57E21C3AC80E4DA5A5E600D1 /* hojo_serio.png */ = {isa = PBXFileReference; name = "hojo_serio.png"; path = "../assets/img/characters/hojo_serio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8AD2FCC00AAD444C946648B5 /* hojo_traje.png */ = {isa = PBXFileReference; name = "hojo_traje.png"; path = "../assets/img/characters/hojo_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35F2A4CA52604C81B2E95A50 /* hojo_uniforme.png */ = {isa = PBXFileReference; name = "hojo_uniforme.png"; path = "../assets/img/characters/hojo_uniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		93BC74B215B74FA3A4DAB4B0 /* jefe_tanaka.png */ = {isa = PBXFileReference; name = "jefe_tanaka.png"; path = "../assets/img/characters/jefe_tanaka.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E27F9194F7C24D2E93F9380F /* kato_enojado.png */ = {isa = PBXFileReference; name = "kato_enojado.png"; path = "../assets/img/characters/kato_enojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		33822971D7A542BDB3BD7CD6 /* kato_feliz.png */ = {isa = PBXFileReference; name = "kato_feliz.png"; path = "../assets/img/characters/kato_feliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		859E860AEB824897B65D065A /* kato_nervioso.png */ = {isa = PBXFileReference; name = "kato_nervioso.png"; path = "../assets/img/characters/kato_nervioso.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5AEB2EEF604845949D5B1DDC /* kato_serio.png */ = {isa = PBXFileReference; name = "kato_serio.png"; path = "../assets/img/characters/kato_serio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F32EBBE8249240BBBE718F37 /* kato_sorprendido.png */ = {isa = PBXFileReference; name = "kato_sorprendido.png"; path = "../assets/img/characters/kato_sorprendido.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5A44408F9641486186BCFD5F /* kato_traje.png */ = {isa = PBXFileReference; name = "kato_traje.png"; path = "../assets/img/characters/kato_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7980C5FD8DE64241B5051D58 /* kato_traje1.png */ = {isa = PBXFileReference; name = "kato_traje1.png"; path = "../assets/img/characters/kato_traje1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BAF62D11A2B34810A1D37CD9 /* kato_triste.png */ = {isa = PBXFileReference; name = "kato_triste.png"; path = "../assets/img/characters/kato_triste.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		50BAA9EA35BB4505AD8E65DD /* kato_uniforme.png */ = {isa = PBXFileReference; name = "kato_uniforme.png"; path = "../assets/img/characters/kato_uniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2152F3ECE5224AF7B3F8D34A /* kato_uniforme1.png */ = {isa = PBXFileReference; name = "kato_uniforme1.png"; path = "../assets/img/characters/kato_uniforme1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7109F0D179DD4043B0460361 /* kishimoto.png */ = {isa = PBXFileReference; name = "kishimoto.png"; path = "../assets/img/characters/kishimoto.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1AFB330E29F94B7F80BBDCCC /* kishimoto_colegiala.png */ = {isa = PBXFileReference; name = "kishimoto_colegiala.png"; path = "../assets/img/characters/kishimoto_colegiala.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B8D35DEF4A104022BD5CF383 /* kishimoto_feliz.png */ = {isa = PBXFileReference; name = "kishimoto_feliz.png"; path = "../assets/img/characters/kishimoto_feliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8CD85EBB06BF49E2AD2638EE /* kishimoto_nerviosa.png */ = {isa = PBXFileReference; name = "kishimoto_nerviosa.png"; path = "../assets/img/characters/kishimoto_nerviosa.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B84BCDFB0BBA449783F44C29 /* kishimoto_parpadeo1.png */ = {isa = PBXFileReference; name = "kishimoto_parpadeo1.png"; path = "../assets/img/characters/kishimoto_parpadeo1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3017281CB3964958940FB9D1 /* kishimoto_parpadeo2.png */ = {isa = PBXFileReference; name = "kishimoto_parpadeo2.png"; path = "../assets/img/characters/kishimoto_parpadeo2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AE8E3C03313C4E2783D4D678 /* kishimoto_parpadeo3.png */ = {isa = PBXFileReference; name = "kishimoto_parpadeo3.png"; path = "../assets/img/characters/kishimoto_parpadeo3.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD6F42C385D949A19DDD101E /* kishimoto_seria.png */ = {isa = PBXFileReference; name = "kishimoto_seria.png"; path = "../assets/img/characters/kishimoto_seria.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		097E1F1EA9964B9FB3BBAE13 /* kishimoto_traje.png */ = {isa = PBXFileReference; name = "kishimoto_traje.png"; path = "../assets/img/characters/kishimoto_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BE46B48438C54B9983FBEAE2 /* kishimoto_triste.png */ = {isa = PBXFileReference; name = "kishimoto_triste.png"; path = "../assets/img/characters/kishimoto_triste.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		53069217797A4009B6F674F2 /* kishimoto_uniforme.png */ = {isa = PBXFileReference; name = "kishimoto_uniforme.png"; path = "../assets/img/characters/kishimoto_uniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DE0260563310458DAF7583DE /* kuronoaermadisparo.png */ = {isa = PBXFileReference; name = "kuronoaermadisparo.png"; path = "../assets/img/characters/kuronoaermadisparo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20EE6F87B92A4DD183D1F536 /* kuronoshot.png */ = {isa = PBXFileReference; name = "kuronoshot.png"; path = "../assets/img/characters/kuronoshot.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7DF65C87C485483CB1641C2F /* kurono_camisa.png */ = {isa = PBXFileReference; name = "kurono_camisa.png"; path = "../assets/img/characters/kurono_camisa.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A5DA8F0E35664CC49EEDBAE2 /* kurono_camisa1.png */ = {isa = PBXFileReference; name = "kurono_camisa1.png"; path = "../assets/img/characters/kurono_camisa1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		244DA1C28CB7457486016489 /* kurono_feliz.png */ = {isa = PBXFileReference; name = "kurono_feliz.png"; path = "../assets/img/characters/kurono_feliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8478AFA8B4204131A810B67D /* kurono_nervioso.png */ = {isa = PBXFileReference; name = "kurono_nervioso.png"; path = "../assets/img/characters/kurono_nervioso.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C8F8582B0F7B4BD4BF8ADFDC /* kurono_poleron.png */ = {isa = PBXFileReference; name = "kurono_poleron.png"; path = "../assets/img/characters/kurono_poleron.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		494FB3B78A5E4B9593B89E93 /* kurono_poleron1.png */ = {isa = PBXFileReference; name = "kurono_poleron1.png"; path = "../assets/img/characters/kurono_poleron1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		775E49FA23E5450BA0DF1E90 /* kurono_poleron_ataque.png */ = {isa = PBXFileReference; name = "kurono_poleron_ataque.png"; path = "../assets/img/characters/kurono_poleron_ataque.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DCF0C24C457C472DAD24CABD /* kurono_poleron_ataque1.png */ = {isa = PBXFileReference; name = "kurono_poleron_ataque1.png"; path = "../assets/img/characters/kurono_poleron_ataque1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1FA7A745CBE34563B1C9B420 /* kurono_poleron_ataque2.png */ = {isa = PBXFileReference; name = "kurono_poleron_ataque2.png"; path = "../assets/img/characters/kurono_poleron_ataque2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2E776649326F4922914457AB /* kurono_serio.png */ = {isa = PBXFileReference; name = "kurono_serio.png"; path = "../assets/img/characters/kurono_serio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39317681894B4B638320D271 /* kurono_sonriendo.png */ = {isa = PBXFileReference; name = "kurono_sonriendo.png"; path = "../assets/img/characters/kurono_sonriendo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C7FC33590D74589BE726C25 /* kurono_sorprendido.png */ = {isa = PBXFileReference; name = "kurono_sorprendido.png"; path = "../assets/img/characters/kurono_sorprendido.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0299C28CAAEB4BD3AB36E25C /* kurono_traje.png */ = {isa = PBXFileReference; name = "kurono_traje.png"; path = "../assets/img/characters/kurono_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B0BCD75F0FB43CCB964289F /* kurono_traje1.png */ = {isa = PBXFileReference; name = "kurono_traje1.png"; path = "../assets/img/characters/kurono_traje1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		14FEB0EC5B164AC4B44B67A9 /* kurono_triste.png */ = {isa = PBXFileReference; name = "kurono_triste.png"; path = "../assets/img/characters/kurono_triste.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8E3A7EC0705D4DA4AAE02524 /* kurono_uniforme.png */ = {isa = PBXFileReference; name = "kurono_uniforme.png"; path = "../assets/img/characters/kurono_uniforme.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8C74D44D457348A2BDA674E3 /* kurono_uniforme1.png */ = {isa = PBXFileReference; name = "kurono_uniforme1.png"; path = "../assets/img/characters/kurono_uniforme1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DD0A27A6A0B043BEAD2F93AC /* menu_configuraciones.png */ = {isa = PBXFileReference; name = "menu_configuraciones.png"; path = "../assets/img/characters/menu_configuraciones.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA006142F6564E2CB4BD20B6 /* mister_cebollense.png */ = {isa = PBXFileReference; name = "mister_cebollense.png"; path = "../assets/img/characters/mister_cebollense.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D2ACAC6C191946F78410D007 /* nishi_enojado.png */ = {isa = PBXFileReference; name = "nishi_enojado.png"; path = "../assets/img/characters/nishi_enojado.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF0EFD6BC17F4431B86B97EE /* nishi_serio.png */ = {isa = PBXFileReference; name = "nishi_serio.png"; path = "../assets/img/characters/nishi_serio.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1D4610B3744C478389294D49 /* nishi_traje.png */ = {isa = PBXFileReference; name = "nishi_traje.png"; path = "../assets/img/characters/nishi_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B2AE9ECCDCCD4F2F8FC31AE7 /* perro.png */ = {isa = PBXFileReference; name = "perro.png"; path = "../assets/img/characters/perro.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF3742C8B3BC44E7B05A60CA /* sadayo.png */ = {isa = PBXFileReference; name = "sadayo.png"; path = "../assets/img/characters/sadayo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E5E961E49044B61858576C2 /* sadayo_traje.png */ = {isa = PBXFileReference; name = "sadayo_traje.png"; path = "../assets/img/characters/sadayo_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		51838E45CD9B4325BCE1B2C2 /* tanaka_ataque.png */ = {isa = PBXFileReference; name = "tanaka_ataque.png"; path = "../assets/img/characters/tanaka_ataque.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A772BB070C754D058B13E035 /* tanaka_feliz.png */ = {isa = PBXFileReference; name = "tanaka_feliz.png"; path = "../assets/img/characters/tanaka_feliz.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C129F8BAB2FA4FCE8A62866C /* tanaka_furioso.png */ = {isa = PBXFileReference; name = "tanaka_furioso.png"; path = "../assets/img/characters/tanaka_furioso.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		380EEEE787D5428FA2B54897 /* tanaka_sin_traje.png */ = {isa = PBXFileReference; name = "tanaka_sin_traje.png"; path = "../assets/img/characters/tanaka_sin_traje.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F147E40B05F4DB080B3A511 /* censura.png */ = {isa = PBXFileReference; name = "censura.png"; path = "../assets/img/effects/censura.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E62C5CD20A5460B9882C3E8 /* efecto_arma1.png */ = {isa = PBXFileReference; name = "efecto_arma1.png"; path = "../assets/img/effects/efecto_arma1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8B734E33124B47C68399378E /* efecto_arma2.png */ = {isa = PBXFileReference; name = "efecto_arma2.png"; path = "../assets/img/effects/efecto_arma2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F24B55D276641899909A610 /* tanaka_ataque_frame1.png */ = {isa = PBXFileReference; name = "tanaka_ataque_frame1.png"; path = "../assets/img/effects/tanaka_ataque_frame1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6140DC14AA644BA8ACCAEB11 /* tanaka_ataque_frame2.png */ = {isa = PBXFileReference; name = "tanaka_ataque_frame2.png"; path = "../assets/img/effects/tanaka_ataque_frame2.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		091514E87A7A4A45AC251FA5 /* logo.png */ = {isa = PBXFileReference; name = "logo.png"; path = "../assets/img/logo/logo.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E70BE161F66463BA4CBA657 /* logo1.png */ = {isa = PBXFileReference; name = "logo1.png"; path = "../assets/img/logo/logo1.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		52130FDB1CEB468DB4FA4E53 /* portada.png */ = {isa = PBXFileReference; name = "portada.png"; path = "../assets/img/portada.png"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C80B921A6F3F58F76C31292 /* libPods-AwesomeProject.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* AwesomeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* AwesomeProjectTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = AwesomeProjectTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* AwesomeProject */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = AwesomeProject;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-AwesomeProject.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject-AwesomeProjectTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* AwesomeProject */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* AwesomeProjectTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				CEFADA3D35A6429C9E1B059E /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* AwesomeProject.app */,
+				00E356EE1AD99517003FC87E /* AwesomeProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-AwesomeProject.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-AwesomeProject.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CEFADA3D35A6429C9E1B059E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				2494A12B8AE545B99AF9D09B /* 7LED.ttf */,
+				E925C48D170D486190E94B0A /* digital-7.ttf */,
+				504FC431811944C29A0957E6 /* Full-Pack.ttf */,
+				9735DA0CD0224F3981C1423C /* gantz.ttf */,
+				F1B7B14DBBC24821BFF1437A /* Genjiro.ttf */,
+				A142DEC21D8D410D99CCA8B8 /* Harukaze.ttf */,
+				4066AE429DC241CB9B82FB1D /* JMH_Savage.ttf */,
+				5F1BC3C31DA44AC581623D01 /* New_Wild_Words.ttf */,
+				8B530F5DA215488495C21381 /* Open24DisplaySt.ttf */,
+				72F8B990A9414A328288F97C /* upheavtt.ttf */,
+				570FAF8BAB72461B87C38920 /* DS-DIGIT.TTF */,
+				A3A72AC5027140128709DADC /* Assets.js */,
+				CB084E52C61143F8ADAFDB73 /* afuera.png */,
+				7A18CE44854C4DDE89E06EE9 /* afuera1.png */,
+				ECE68635F1514E0CBA56886C /* esfera_abierta.png */,
+				239A2C6014014B268A2F95B5 /* esfera_cerrada.png */,
+				B60E50F0C98143E2A95CA433 /* esfera_cerrada1.png */,
+				81FD515605CE4D6291D4414F /* fondo_calle1.png */,
+				C50B08EC27DC42209C7D804A /* habitacion_dia.png */,
+				D05E32480CC34A92A587FC8D /* habitacion_noche.png */,
+				7E835A6D546C4937B73C5EE3 /* puerta_esfera_derecha.png */,
+				E60F9CB2C87F48C7958840A8 /* puerta_esfera_izquierda.png */,
+				4E2348B447704324B80AC696 /* arma_abierta.png */,
+				FA6B9150407D4579A793270A /* cebollin1.png */,
+				371CD8903CA4466E9362DCD2 /* cebollin2.png */,
+				CAD48EE475E64BECBF1B6589 /* cebollin_esfera.png */,
+				57E21C3AC80E4DA5A5E600D1 /* hojo_serio.png */,
+				8AD2FCC00AAD444C946648B5 /* hojo_traje.png */,
+				35F2A4CA52604C81B2E95A50 /* hojo_uniforme.png */,
+				93BC74B215B74FA3A4DAB4B0 /* jefe_tanaka.png */,
+				E27F9194F7C24D2E93F9380F /* kato_enojado.png */,
+				33822971D7A542BDB3BD7CD6 /* kato_feliz.png */,
+				859E860AEB824897B65D065A /* kato_nervioso.png */,
+				5AEB2EEF604845949D5B1DDC /* kato_serio.png */,
+				F32EBBE8249240BBBE718F37 /* kato_sorprendido.png */,
+				5A44408F9641486186BCFD5F /* kato_traje.png */,
+				7980C5FD8DE64241B5051D58 /* kato_traje1.png */,
+				BAF62D11A2B34810A1D37CD9 /* kato_triste.png */,
+				50BAA9EA35BB4505AD8E65DD /* kato_uniforme.png */,
+				2152F3ECE5224AF7B3F8D34A /* kato_uniforme1.png */,
+				7109F0D179DD4043B0460361 /* kishimoto.png */,
+				1AFB330E29F94B7F80BBDCCC /* kishimoto_colegiala.png */,
+				B8D35DEF4A104022BD5CF383 /* kishimoto_feliz.png */,
+				8CD85EBB06BF49E2AD2638EE /* kishimoto_nerviosa.png */,
+				B84BCDFB0BBA449783F44C29 /* kishimoto_parpadeo1.png */,
+				3017281CB3964958940FB9D1 /* kishimoto_parpadeo2.png */,
+				AE8E3C03313C4E2783D4D678 /* kishimoto_parpadeo3.png */,
+				FD6F42C385D949A19DDD101E /* kishimoto_seria.png */,
+				097E1F1EA9964B9FB3BBAE13 /* kishimoto_traje.png */,
+				BE46B48438C54B9983FBEAE2 /* kishimoto_triste.png */,
+				53069217797A4009B6F674F2 /* kishimoto_uniforme.png */,
+				DE0260563310458DAF7583DE /* kuronoaermadisparo.png */,
+				20EE6F87B92A4DD183D1F536 /* kuronoshot.png */,
+				7DF65C87C485483CB1641C2F /* kurono_camisa.png */,
+				A5DA8F0E35664CC49EEDBAE2 /* kurono_camisa1.png */,
+				244DA1C28CB7457486016489 /* kurono_feliz.png */,
+				8478AFA8B4204131A810B67D /* kurono_nervioso.png */,
+				C8F8582B0F7B4BD4BF8ADFDC /* kurono_poleron.png */,
+				494FB3B78A5E4B9593B89E93 /* kurono_poleron1.png */,
+				775E49FA23E5450BA0DF1E90 /* kurono_poleron_ataque.png */,
+				DCF0C24C457C472DAD24CABD /* kurono_poleron_ataque1.png */,
+				1FA7A745CBE34563B1C9B420 /* kurono_poleron_ataque2.png */,
+				2E776649326F4922914457AB /* kurono_serio.png */,
+				39317681894B4B638320D271 /* kurono_sonriendo.png */,
+				6C7FC33590D74589BE726C25 /* kurono_sorprendido.png */,
+				0299C28CAAEB4BD3AB36E25C /* kurono_traje.png */,
+				5B0BCD75F0FB43CCB964289F /* kurono_traje1.png */,
+				14FEB0EC5B164AC4B44B67A9 /* kurono_triste.png */,
+				8E3A7EC0705D4DA4AAE02524 /* kurono_uniforme.png */,
+				8C74D44D457348A2BDA674E3 /* kurono_uniforme1.png */,
+				DD0A27A6A0B043BEAD2F93AC /* menu_configuraciones.png */,
+				EA006142F6564E2CB4BD20B6 /* mister_cebollense.png */,
+				D2ACAC6C191946F78410D007 /* nishi_enojado.png */,
+				EF0EFD6BC17F4431B86B97EE /* nishi_serio.png */,
+				1D4610B3744C478389294D49 /* nishi_traje.png */,
+				B2AE9ECCDCCD4F2F8FC31AE7 /* perro.png */,
+				FF3742C8B3BC44E7B05A60CA /* sadayo.png */,
+				0E5E961E49044B61858576C2 /* sadayo_traje.png */,
+				51838E45CD9B4325BCE1B2C2 /* tanaka_ataque.png */,
+				A772BB070C754D058B13E035 /* tanaka_feliz.png */,
+				C129F8BAB2FA4FCE8A62866C /* tanaka_furioso.png */,
+				380EEEE787D5428FA2B54897 /* tanaka_sin_traje.png */,
+				3F147E40B05F4DB080B3A511 /* censura.png */,
+				0E62C5CD20A5460B9882C3E8 /* efecto_arma1.png */,
+				8B734E33124B47C68399378E /* efecto_arma2.png */,
+				7F24B55D276641899909A610 /* tanaka_ataque_frame1.png */,
+				6140DC14AA644BA8ACCAEB11 /* tanaka_ataque_frame2.png */,
+				091514E87A7A4A45AC251FA5 /* logo.png */,
+				4E70BE161F66463BA4CBA657 /* logo1.png */,
+				52130FDB1CEB468DB4FA4E53 /* portada.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* AwesomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeProjectTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = AwesomeProjectTests;
+			productName = AwesomeProjectTests;
+			productReference = 00E356EE1AD99517003FC87E /* AwesomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* AwesomeProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeProject" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AwesomeProject;
+			productName = AwesomeProject;
+			productReference = 13B07F961A680F5B00A75B9A /* AwesomeProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AwesomeProject" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* AwesomeProject */,
+				00E356ED1AD99517003FC87E /* AwesomeProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AC49B55228D9448AB7379B41 /* 7LED.ttf in Resources */,
+				FEE117B0F7FC424190C90F50 /* digital-7.ttf in Resources */,
+				599B697ADE90415CBE34973B /* Full-Pack.ttf in Resources */,
+				9531A0F1313A456BB13689C1 /* gantz.ttf in Resources */,
+				771F6F1BCE104755A942086D /* Genjiro.ttf in Resources */,
+				8B3B1745BBB64721896825A4 /* Harukaze.ttf in Resources */,
+				1B9EA2735CA64319A942346F /* JMH_Savage.ttf in Resources */,
+				439B25E521644933849F20F9 /* New_Wild_Words.ttf in Resources */,
+				FE246A3292724B7399711301 /* Open24DisplaySt.ttf in Resources */,
+				F6C4F041B1CC491B9C684B19 /* upheavtt.ttf in Resources */,
+				3CA84CCF14004774A6FEE77F /* DS-DIGIT.TTF in Resources */,
+				8973ADB44FEE47649BCC62C0 /* Assets.js in Resources */,
+				A1994003C3B1451B83057C55 /* afuera.png in Resources */,
+				1C5616A9B96E426A9128F2F3 /* afuera1.png in Resources */,
+				61E9F3DCF72E451A8AA618D7 /* esfera_abierta.png in Resources */,
+				28F40932BFBE4D17A72F80B2 /* esfera_cerrada.png in Resources */,
+				1721B3D790214BABAC0772E1 /* esfera_cerrada1.png in Resources */,
+				DB57CD535FAC4C779A685AA1 /* fondo_calle1.png in Resources */,
+				F995C5D1142F4CFD9F292F98 /* habitacion_dia.png in Resources */,
+				79CE8A04C6AC4CA6AF1D9C30 /* habitacion_noche.png in Resources */,
+				899D50756230495E9CD489A9 /* puerta_esfera_derecha.png in Resources */,
+				D2927CE956D74FB29B05F698 /* puerta_esfera_izquierda.png in Resources */,
+				A962B8694EB94BA898B9A5A4 /* arma_abierta.png in Resources */,
+				97E74C43E4954E738509CDC9 /* cebollin1.png in Resources */,
+				0B3082ED3B3C4C0B95F4E13C /* cebollin2.png in Resources */,
+				B54DE01F9EE24EFAB5A313E6 /* cebollin_esfera.png in Resources */,
+				10AEECEC730C43E38EB7009A /* hojo_serio.png in Resources */,
+				326F8817C5B648DB9E4C466E /* hojo_traje.png in Resources */,
+				A3302C563A474F189397BFDB /* hojo_uniforme.png in Resources */,
+				5FA42A7F9837470E9DF54B28 /* jefe_tanaka.png in Resources */,
+				EBE3BD1311F648F2895C45BC /* kato_enojado.png in Resources */,
+				7C2FDFA3579F4CDFA4328C47 /* kato_feliz.png in Resources */,
+				D0925D7766B4439E85074F81 /* kato_nervioso.png in Resources */,
+				2338C30FB5234E559A059AB2 /* kato_serio.png in Resources */,
+				3E6F7B61D8744744994375C2 /* kato_sorprendido.png in Resources */,
+				1B36F9226EB946EB9E60E13B /* kato_traje.png in Resources */,
+				91F982819AD046058A5E5721 /* kato_traje1.png in Resources */,
+				2A7A87988F3845D2B03E42FC /* kato_triste.png in Resources */,
+				087B55A074D54B3CA248A420 /* kato_uniforme.png in Resources */,
+				563E9F86161A4BE28F4E309D /* kato_uniforme1.png in Resources */,
+				4FE8DB1EA7D14D3FAEBF232C /* kishimoto.png in Resources */,
+				A9E3969852FA47D6B7631B88 /* kishimoto_colegiala.png in Resources */,
+				F1C97D179B864F2F9DB8DC2D /* kishimoto_feliz.png in Resources */,
+				609A1A2342314EE2986ACD40 /* kishimoto_nerviosa.png in Resources */,
+				175AA1E325D0463F91D93140 /* kishimoto_parpadeo1.png in Resources */,
+				637F76C7B74A48E59DD7E4F1 /* kishimoto_parpadeo2.png in Resources */,
+				C947027B08AB42B5AF2D8F0C /* kishimoto_parpadeo3.png in Resources */,
+				7A3D0FCE7EFD47A386D3B3A2 /* kishimoto_seria.png in Resources */,
+				12151D71C0774AFD8C6D1795 /* kishimoto_traje.png in Resources */,
+				79E701A7AE9546299993D58D /* kishimoto_triste.png in Resources */,
+				9F8BEA4EDB8448358C5D373C /* kishimoto_uniforme.png in Resources */,
+				2A326B8F4C3B410F81565AF7 /* kuronoaermadisparo.png in Resources */,
+				95A6EF41DFE1402C8F713D72 /* kuronoshot.png in Resources */,
+				8C10D2ADFCB04344B14696FE /* kurono_camisa.png in Resources */,
+				48D70B3899F44ECF805A578B /* kurono_camisa1.png in Resources */,
+				BC298B92374548B592B930CC /* kurono_feliz.png in Resources */,
+				1A401E3C69CF4595AD896632 /* kurono_nervioso.png in Resources */,
+				486A785F8F584C949CDF5F43 /* kurono_poleron.png in Resources */,
+				2ADF72D53DD1458E837C943A /* kurono_poleron1.png in Resources */,
+				D6D15B1725984921A82688DD /* kurono_poleron_ataque.png in Resources */,
+				D92436D811CD4FCAA92BAF42 /* kurono_poleron_ataque1.png in Resources */,
+				EF6FA841B7B34B83BB027561 /* kurono_poleron_ataque2.png in Resources */,
+				06938000D9114473A762FC5A /* kurono_serio.png in Resources */,
+				1EF430C5FFBF46D9B964879F /* kurono_sonriendo.png in Resources */,
+				2655E7CE100B4BE289CD21FC /* kurono_sorprendido.png in Resources */,
+				19643C6B375B49A4A41A96D4 /* kurono_traje.png in Resources */,
+				A7FEBCB9AA9C4E0AB36C85B6 /* kurono_traje1.png in Resources */,
+				D9AC0706A6024D8590455CD7 /* kurono_triste.png in Resources */,
+				605B2C7DB76644309A2509FF /* kurono_uniforme.png in Resources */,
+				676BB0566F354447A7115B06 /* kurono_uniforme1.png in Resources */,
+				BB11EC1A24EB42A7881F0C8E /* menu_configuraciones.png in Resources */,
+				A02620FB6AB2453C8DC5A3AE /* mister_cebollense.png in Resources */,
+				20FE45485402415D9FADF446 /* nishi_enojado.png in Resources */,
+				C39F06BFF2E2488B80BAC4B4 /* nishi_serio.png in Resources */,
+				D7AE4FBE3B6E4E4DBAF3A8F7 /* nishi_traje.png in Resources */,
+				AFF041C01787496AADE50256 /* perro.png in Resources */,
+				0CC125498ECC44AE8002A97A /* sadayo.png in Resources */,
+				C5FF0969F92F4702886307B4 /* sadayo_traje.png in Resources */,
+				A94C3315AF124F628018C423 /* tanaka_ataque.png in Resources */,
+				C2BD55F775DD4F8992025B43 /* tanaka_feliz.png in Resources */,
+				A36DCBF380364E86A479131E /* tanaka_furioso.png in Resources */,
+				A7C1507DF74F4B7282FD494F /* tanaka_sin_traje.png in Resources */,
+				09B8FE9221F44397BFAEA7FF /* censura.png in Resources */,
+				E1292B4B87BE4F218C41F0A8 /* efecto_arma1.png in Resources */,
+				AB67739C6EB24C41B2ABFCBB /* efecto_arma2.png in Resources */,
+				373E6FD3878B4BE292E9D692 /* tanaka_ataque_frame1.png in Resources */,
+				A285A106834748E386E577C5 /* tanaka_ataque_frame2.png in Resources */,
+				B303029269F34F84BDED03E6 /* logo.png in Resources */,
+				F6D967D6B25649E98D68D0C3 /* logo1.png in Resources */,
+				889CD362B185463A84E54A82 /* portada.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AwesomeProject-AwesomeProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AwesomeProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject/Pods-AwesomeProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E356F31AD99517003FC87E /* AwesomeProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* AwesomeProject */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-AwesomeProject-AwesomeProjectTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AwesomeProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/AwesomeProject";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = AwesomeProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AwesomeProject.app/AwesomeProject";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-AwesomeProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = AwesomeProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = AwesomeProject;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-AwesomeProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = AwesomeProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = AwesomeProject;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AwesomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AwesomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "AwesomeProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}
